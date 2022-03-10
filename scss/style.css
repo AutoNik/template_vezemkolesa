@@ -6442,6 +6442,10 @@ li {
   line-height: 1.2em;
 }
 
+.main-product-card-description {
+  background-color: #444;
+}
+
 .main-product-card-link-container {
   padding-top: 5px;
 }
