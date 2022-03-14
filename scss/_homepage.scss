@@ -279,8 +279,15 @@
   &__grid {
     width: 100%;
     overflow: auto;
-  }
 
+    > .catalog__grid__item {
+      @media screen and (min-width: $md2 + px) and (max-width: $md1 + px) {
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 .homepage__vendor__logo {
@@ -418,6 +425,14 @@
 
     > .summer, .winter {
       display: none;
+
+      > .catalog__grid__item {
+        @media screen and (min-width: $md2 + px) and (max-width: $md1 + px) {
+          &:last-child {
+            display: none;
+          }
+        }
+      }
     }
   }
 }

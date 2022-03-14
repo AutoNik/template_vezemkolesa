@@ -21,11 +21,6 @@
     width: 33.3333%;
   }
 
-  @media screen and (min-width: $md2 + px) and (max-width: $md1 + px) {
-    &:last-child {
-      display: none;
-    }
-  }
   @media screen and (min-width: $md1 + px) {
     width: 25%;
   }

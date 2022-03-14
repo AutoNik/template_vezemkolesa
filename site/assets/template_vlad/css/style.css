@@ -11097,6 +11097,11 @@ li {
   width: 100%;
   overflow: auto;
 }
+@media screen and (min-width: 1025px) and (max-width: 1601px) {
+  .homepage__top_grid_item__grid > .catalog__grid__item:last-child {
+    display: none;
+  }
+}
 
 .homepage__vendor__logo {
   max-width: 1920px;
@@ -11216,6 +11221,11 @@ li {
 }
 .homepage__popular_grid_item__grid > .summer, .homepage__popular_grid_item__grid .winter {
   display: none;
+}
+@media screen and (min-width: 1025px) and (max-width: 1601px) {
+  .homepage__popular_grid_item__grid > .summer > .catalog__grid__item:last-child, .homepage__popular_grid_item__grid .winter > .catalog__grid__item:last-child {
+    display: none;
+  }
 }
 
 .homepage__company__about {
@@ -11646,11 +11656,6 @@ li {
 @media screen and (min-width: 1025px) {
   .catalog__grid__item {
     width: 33.3333%;
-  }
-}
-@media screen and (min-width: 1025px) and (max-width: 1601px) {
-  .catalog__grid__item:last-child {
-    display: none;
   }
 }
 @media screen and (min-width: 1601px) {
