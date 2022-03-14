@@ -21,6 +21,11 @@
     width: 33.3333%;
   }
 
+  @media screen and (min-width: $md2 + px) and (max-width: $md1 + px) {
+    &:last-child {
+      display: none;
+    }
+  }
   @media screen and (min-width: $md1 + px) {
     width: 25%;
   }
@@ -150,6 +155,18 @@
           text-transform: uppercase;
           color: $color-accent;
         }
+      }
+
+      &-offer-total-count {
+        height: 2.4em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: $font-roboto;
+        font-size: 13px;
+        line-height: 1.2em;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $color-accent;
       }
     }
 
