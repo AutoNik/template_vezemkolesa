@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge" >
+  <title>Шинный калькулятор</title>
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+        href="site/assets/template_vlad/css/style.css"
+        type="text/css" >
+    <link rel="stylesheet"
+        href="site/assets/template_vlad/css/calculate.css"
+        type="text/css" >
+  
+<!--  <link rel="stylesheet"-->
+<!--        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: #fff;">
+    
+    <div class="page__calculate">
+        <div class="page__calculate-left">
+            <h1 class="page__header page__header_level_one">Шинный калькулятор</h1>
+            <div class="page__calculate-tabs">
+                <ul>
+                    <li><a href="">Шинный калькулятор</a></li>
+                    <li><a class="page__calculate-tabs-active" href="">Расчет ширины диска</a></li>
+                    <li><a href="">Шинный калькулятор - дюймы</a></li>
+                </ul>
+            </div>
+            <!--Информация для первого таба Шинный калькулятор-->
+            <div class="page__calculate-tabs-content">
+                <p>С помощью шинного калькулятора вы легко можете посчитать, как изменятся: внешние размеры колеса, высота дорожного просвета (клиренс), показания спидометра и другие характеристики, при установке шин с другим типоразмером на ваш автомобиль. Все размеры шин калькулятор рассчитывает в миллиметрах, а скорость автомобиля в км/ч. Также калькулятор поможет рассчитать необходимую ширину диска для определенного размера шины</p>
+            </div>
+            <div class="page__calculate-tabs-select">
+                <div class="calculate-tabs-select-block">
+                    <div class="tabs-select-block-container">
+                        <h4>Старый размер:</h4>
+                        <div style="width: 100%; overflow: auto;">
+                            <div class="catalog__filter__control__set">
+                                <div class="calculate__filter__control__set__item">
+                                    <select class="calculate__filter__select">
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                    </select>
+                                </div>
+
+                                <div class="calculate__filter__control__set__item">
+                                    <select class="calculate__filter__select">
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                    </select>
+                                </div>
+
+                                <div class="calculate__filter__control__set__item">
+                                    <select class="calculate__filter__select">
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculate-tabs-select-block">
+                    <div class="tabs-select-block-container">
+                        <h4>Старый размер:</h4>
+                        <div style="width: 100%; overflow: auto;">
+                            <div class="catalog__filter__control__set">
+                                <div class="calculate__filter__control__set__item">
+                                    <select class="calculate__filter__select">
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                    </select>
+                                </div>
+
+                                <div class="calculate__filter__control__set__item">
+                                    <select class="calculate__filter__select">
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                    </select>
+                                </div>
+
+                                <div class="calculate__filter__control__set__item">
+                                    <select class="calculate__filter__select">
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                    </select>
+                                </div>
+                                <div class="catalog__filter__control__submit__button__container">
+                                    <button class="catalog__filter__control__submit__button data-control-form-submit-button" type="submit">подобрать</button>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="page__calculate-tabs-table">
+                <div class="page__calculate-tabs-table-block">
+                    <h3>Размеры</h3>
+                    <ul>
+                        <li><img class="table-icon-a" src="img/a-icon.png" alt=""> Ширина шины, мм </li>
+                        <li><img class="table-icon-b" src="img/b-icon.png" alt=""> Высота профиля, мм </li>
+                        <li><img class="table-icon-c" src="img/c-icon.png" alt=""> Внутренний диаметр, мм </li>
+                        <li><img class="table-icon-d" src="img/d-icon.png" alt=""> Внешний диаметр, мм </li>
+                    </ul>
+                </div>
+                <div class="page__calculate-tabs-table-block">
+                    <h3>Старый (мм)</h3>
+                    <ul class="page__calculate-tabs-table-block-center">
+                        <li>195</li>
+                        <li>127</li>
+                        <li>381</li>
+                        <li>635</li>
+                    </ul>
+                </div>
+                <div class="page__calculate-tabs-table-block">
+                    <h3>Новый (мм)</h3>
+                    <ul class="page__calculate-tabs-table-block-center">
+                        <li>205</li>
+                        <li>113</li>
+                        <li>406</li>
+                        <li>632</li>
+                    </ul>
+                </div>
+                <div class="page__calculate-tabs-table-block">
+                    <h3>Сравнение (разница в мм)</h3>
+                    <ul class="page__calculate-tabs-table-block-center">
+                        <li>+10</li>
+                        <li>-14</li>
+                        <li>+25</li>
+                        <li>-3</li>
+                    </ul>
+                </div>
+                <div class="page__calculate-tabs-table-block">
+                    <img src="img/shine-illustration.png" alt="">
+                </div>
+            </div>
+            <div class="page__calculate-tabs-timers">
+                <div class="page__calculate-tabs-speed">
+                    <h3>Спидометр</h3>
+                    <div class="page__calculate-tabs-speed-list">
+                        <div class="page__calculate-tabs-speed-item">
+                            <h3>Показания спидометра</h3>
+                            <img src="img/speed-1.png" alt="">
+                            <ul>
+                                <li>Показания спидометра (км/ч)	</li>
+                                <li>Реальная скорость (км/ч)	</li>
+                                <li>Разницы (км/ч)	</li>
+                            </ul>
+                        </div>
+                        <div class="page__calculate-tabs-speed-item">
+                            <h3>Реальная скорость</h3>
+                            <img src="img/speed-2.png" alt="">
+                            <ul class="page__calculate-tabs-table-block-center">
+                                <li>90	</li>
+                                <li>89.6</li>
+                                <li>-0.43</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="page__calculate-tabs-clirens">
+                    <h3>Клиренс</h3>
+                    <p>Изменение клиренса, мм <span>–1.5</span></p>
+                </div>   
+            </div>
+            <div class="page__calculate-tabs-info">
+                <div><span>Внимание!</span></div>
+                <div><p>1. Установка нестандартных типоразмеров может привести к ухудшению характеристик автомобиля и разрушению самой шины!</p></div>
+                <div><p>2. Диски меньшего диаметра, чем те, что установлены сейчас, могут не подойти к вашему авто, поскольку тормозная система (суппорт) может упираться во внутреннюю часть диска.</p></div>
+            </div>
+
+
+
+            <!--Информация для второго таба Расчет ширины диска-->
+            <!--<div class="page__calculate-tabs-content">
+                <p>При подборе дисков для вашего автомобиля необходимо точно знать минимальную и максимальную ширину диска подходящую для данного типоразмера шины. Для расчета ширины диска вы можете воспользоваться этим разделом шинного калькулятора</p>
+            </div>
+            <div class="page__calculate-tabs-select">
+                <div class="calculate-tabs-select-block">
+                    <div class="tabs-select-block-container">
+                        <h4>Введите типоразмер размер:</h4>
+                        <div style="width: 100%; overflow: auto;">
+                            <div class="catalog__filter__control__set">
+                                <div class="calculate__filter__control__set__item">
+                                    <select class="calculate__filter__select">
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                    </select>
+                                </div>
+
+                                <div class="calculate__filter__control__set__item">
+                                    <select class="calculate__filter__select">
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                    </select>
+                                </div>
+
+                                <div class="calculate__filter__control__set__item">
+                                    <select class="calculate__filter__select">
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                    </select>
+                                </div>
+                                <div class="catalog__filter__control__submit__button__container">
+                                    <button class="catalog__filter__control__submit__button data-control-form-submit-button" type="submit">рассчитать</button>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page__calculate-tabs-parametr">
+                <div class="page__calculate-tabs-parametr-item">
+                    <h3>Параметры диска</h3>
+                    <ul>
+                        <li><p>Диаметр диска, дюймы	</p> <p><span>15</span></p></li>
+                        <li><p>Минимальная ширина диска, дюймы</p> <p><span>5.5</span></p></li>
+                        <li><p>Максимальная ширина диска, дюймы</p> <p><span>7</span></p></li>
+                    </ul>
+                </div>
+                <div class="page__calculate-tabs-parametr-item">
+                    <h4>Внимание!</h4>
+                    <p>Установка слишком узких или слишком широких дисков приведет к деформации шины, ухудшению ее эксплуатационных характеристик, а также к повышенному износу.</p>
+                </div>
+            </div>-->
+
+
+
+
+            <!--Информация для третьего таба Шинный калькулятор - дюймы-->
+            <!--<div class="page__calculate-tabs-content">
+                <p>Для пересчета американских размеров шин в дюймах в европейские типоразмеры в мм, вы можете воспользоваться шинным калькулятором для дюймовых размеров. К примеру, Вам нужно пересчитать американский типоразмер шины с маркировкой <strong>31Х10.5 R15</strong> — в европейский. Мы вводим 31 х 10.5 х 15 и получаем результат расчета: <strong>267/76 R15</strong>, а чуть ниже вы будет показан округленный до европейского стандарта типоразмер <strong>267/76 R15</strong>.</p>
+            </div>
+            <div class="page__calculate-tabs-select">
+                <div class="calculate-tabs-select-block">
+                    <div class="tabs-select-block-container">
+                        <h4>Размер шины в дюймах (LT) :</h4>
+                        <div style="width: 100%; overflow: auto;">
+                            <div class="catalog__filter__control__set">
+                                <div class="calculate__filter__control__set__item">
+                                    <select class="calculate__filter__select">
+                                        <option value="">31</option>
+                                        <option value="">33</option>
+                                        <option value="">115</option>
+                                        <option value="">135</option>
+                                        <option value="">195</option>
+                                        <option value="">135</option>
+                                        <option value="">15</option>
+                                    </select>
+                                </div>
+
+                                <div class="calculate__filter__control__set__item">
+                                    <select class="calculate__filter__select">
+                                        <option value="">10.5</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                    </select>
+                                </div>
+
+                                <div class="calculate__filter__control__set__item">
+                                    <select class="calculate__filter__select">
+                                        <option value="">15</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                    </select>
+                                </div>
+                                <div class="catalog__filter__control__submit__button__container">
+                                    <button class="catalog__filter__control__submit__button data-control-form-submit-button" type="submit">рассчитать</button>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page__calculate-tabs-parametr-table">
+                <h3>Пересчет дюймового типоразмера шин</h3>
+                <table>
+                    <tr>
+                        <th><p>Американский типоразмер	</p></th>
+                        <td><p><strong>31</strong></p></td>
+                        <td><p><strong>267</strong></p></td>
+                        <td><p><strong>265</strong></p></td>
+                    </tr>
+                    <tr>
+                        <th><p>Метричный типоразмер		</p></th>
+                        <td><p><strong>10</strong></p></td>
+                        <td><p><strong>76</strong></p></td>
+                        <td><p><strong>75</strong></p></td>
+                    </tr>
+                    <tr>
+                        <th><p>Округленный до европейского стандарта</p></th>
+                        <td><p><strong>15</strong></p></td>
+                        <td><p><strong>15</strong></p></td>
+                        <td><p><strong>15</strong></p></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="page__calculate-tabs-select">
+                <div class="calculate-tabs-select-block">
+                    <div class="tabs-select-block-container">
+                        <h4>Сравнение: дюймовые типоразмеры и метрические</h4>
+                        <div class="page__calculate-tabs-content">
+                            <p>Сравнение американских и европейских типоразмеров шин. Иногда бывает необходимо узнать, как изменятся размеры колеса при замене шин с американской маркировкой на европейскую. В этом шинном калькуляторе для дюймовых типоразмеров вы сможете рассчитать изменение внешних параметров шины и клиренса автомобиля (Клиренс — высота дорожного просвета, т.е это расстояние между днищем автомобиля и дорогой).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page__calculate-tabs-select">
+                <div class="calculate-tabs-select-block">
+                    <div class="tabs-select-block-container">
+                        <h4>Старый размер:</h4>
+                        <div style="width: 100%; overflow: auto;">
+                            <div class="catalog__filter__control__set">
+                                <div class="calculate__filter__control__set__item">
+                                    <select class="calculate__filter__select">
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                    </select>
+                                </div>
+
+                                <div class="calculate__filter__control__set__item">
+                                    <select class="calculate__filter__select">
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                    </select>
+                                </div>
+
+                                <div class="calculate__filter__control__set__item">
+                                    <select class="calculate__filter__select">
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculate-tabs-select-block">
+                    <div class="tabs-select-block-container">
+                        <h4>Старый размер:</h4>
+                        <div style="width: 100%; overflow: auto;">
+                            <div class="catalog__filter__control__set">
+                                <div class="calculate__filter__control__set__item">
+                                    <select class="calculate__filter__select">
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                    </select>
+                                </div>
+
+                                <div class="calculate__filter__control__set__item">
+                                    <select class="calculate__filter__select">
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                    </select>
+                                </div>
+
+                                <div class="calculate__filter__control__set__item">
+                                    <select class="calculate__filter__select">
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                        <option value="">195</option>
+                                    </select>
+                                </div>
+                                <div class="catalog__filter__control__submit__button__container">
+                                    <button class="catalog__filter__control__submit__button data-control-form-submit-button" type="submit">подобрать</button>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page__calculate-tabs-table">
+                <div class="page__calculate-tabs-table-block">
+                    <h3>Размеры</h3>
+                    <ul>
+                        <li><img class="table-icon-a" src="img/a-icon.png" alt=""> Ширина шины, мм </li>
+                        <li><img class="table-icon-b" src="img/b-icon.png" alt=""> Высота профиля, мм </li>
+                        <li><img class="table-icon-c" src="img/c-icon.png" alt=""> Внутренний диаметр, мм </li>
+                        <li><img class="table-icon-d" src="img/d-icon.png" alt=""> Внешний диаметр, мм </li>
+                    </ul>
+                </div>
+                <div class="page__calculate-tabs-table-block">
+                    <h3>Старый (мм)</h3>
+                    <ul class="page__calculate-tabs-table-block-center">
+                        <li>195</li>
+                        <li>127</li>
+                        <li>381</li>
+                        <li>635</li>
+                    </ul>
+                </div>
+                <div class="page__calculate-tabs-table-block">
+                    <h3>Новый (мм)</h3>
+                    <ul class="page__calculate-tabs-table-block-center">
+                        <li>205</li>
+                        <li>113</li>
+                        <li>406</li>
+                        <li>632</li>
+                    </ul>
+                </div>
+                <div class="page__calculate-tabs-table-block">
+                    <h3>Сравнение (разница в мм)</h3>
+                    <ul class="page__calculate-tabs-table-block-center">
+                        <li>+10</li>
+                        <li>-14</li>
+                        <li>+25</li>
+                        <li>-3</li>
+                    </ul>
+                </div>
+                <div class="page__calculate-tabs-table-block">
+                    <img src="img/shine-illustration.png" alt="">
+                </div>
+            </div>
+            <div class="page__calculate-tabs-timers">
+                <div class="page__calculate-tabs-speed">
+                    <h3>Спидометр</h3>
+                    <div class="page__calculate-tabs-speed-list">
+                        <div class="page__calculate-tabs-speed-item">
+                            <h3>Показания спидометра</h3>
+                            <img src="img/speed-1.png" alt="">
+                            <ul>
+                                <li>Показания спидометра (км/ч)	</li>
+                                <li>Реальная скорость (км/ч)	</li>
+                                <li>Разницы (км/ч)	</li>
+                            </ul>
+                        </div>
+                        <div class="page__calculate-tabs-speed-item">
+                            <h3>Реальная скорость</h3>
+                            <img src="img/speed-2.png" alt="">
+                            <ul class="page__calculate-tabs-table-block-center">
+                                <li>90	</li>
+                                <li>89.6</li>
+                                <li>-0.43</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="page__calculate-tabs-clirens">
+                    <h3>Клиренс</h3>
+                    <p>Изменение клиренса, мм <span>–1.5</span></p>
+                </div>   
+            </div>-->
+
+            
+
+
+            
+            <!--Блок после первых табов-->
+            <div class="page__calculate-tabs-readmore">
+                <div><p>Подобрать для вас шины с типоразмером <span>205/55 R16</span>?</p></div>
+                <div><a href="">Смотреть каталог</a></div>
+            </div>
+            <div class="page__calculate-tabs-catalog">
+                <div class="page__calculate-tabs-catalog-list">
+                    <h3>Найдено в каталоге</h3>
+                    <ul>
+                        <li><img src="img/temp-plus.png" alt=""> <a href="">Зимних моделей 205/55 R16</a> — 68</li>
+                        <li><img src="img/temp-minus.png" alt=""> <a href="">Летних моделей 205/55 R16</a> — 25</li>
+                    </ul>
+                </div>
+                <div class="page__calculate-tabs-catalog-info">
+                    <h3>При пересчёте размеров шин на калькуляторе, следует учитывать, что:</h3>
+                    <div class="page__calculate-tabs-catalog-text">
+                        <p>При увеличении диаметра колёсного диска, (и, как следствие, уменьшение высоты профиля шины, чтобы внешний диаметр колеса оставался без изменений) увеличивается нагрузка на подвеску автомобиля, а так же ухудшается комфорт (машина станет заметно жёстче).</p>
+                        <p>При чрезмерном увеличении профиля шины машина становится «валкой», хуже управляется и при критических значениях высоты профиля шина может начать цепляться за детали кузова и подвески автомобиля, что в последствии приведет к ее разрушению.</p>
+                        <p>Погрешность в показаниях спидометра зависит от скорости автомобиля, при увеличении скорости погрешность увеличивается. Кроме того нужно учитывать, что погрешность влияет на показания расхода топлива автомобиля</p>
+                    </div>
+                </div>
+            </div>
+            <div class="page__calculate-foot">
+                <div class="page__calculate-foot-left">
+                    <div class="page__calculate-foot-tabs">
+                        <ul>
+                            <li><a href="">R17</a></li>
+                            <li><a class="page__calculate-tabs-active" href="">R18</a></li>
+                            <li><a href="">R19</a></li>
+                            <li><a href="">R20</a></li>
+                            <li><a href="">R21</a></li>
+                        </ul>
+                    </div>
+                    <div class="page__calculate-foot-tabs-info">
+                        <div class="page__calculate-foot-tabs-item">
+                            <h4>Похожие типоразмеры для размера 195/65 R15	</h4>
+                            <ul>
+                                <li>195/65 R15	</li>
+                                <li>205/60 R15	</li>
+                                <li>215/60 R15</li>
+                            </ul>
+                        </div>
+                        <div class="page__calculate-foot-tabs-item">
+                            <h4>Изменение внешнего диаметра (D)		</h4>
+                            <ul class="page__calculate-tabs-table-block-center">
+                                <li>0</li>
+                                <li>-8</li>
+                                <li>4</li>
+                            </ul>
+                        </div>
+                        <div class="page__calculate-foot-tabs-item">
+                            <h4>Количество <a class="color-winter" href="">зимних</a> моделей в каталоге</h4>
+                            <ul class="page__calculate-tabs-table-block-center">
+                                <li><a href="">14</a></li>
+                                <li><a href="">15</a></li>
+                                <li><a href="">1</a></li>
+                            </ul>
+                        </div>
+                        <div class="page__calculate-foot-tabs-item">
+                            <h4>Количество <a class="color-summer" href="">летних</a> моделей в каталоге</h4>
+                            <ul class="page__calculate-tabs-table-block-center">
+                                <li><a href="">56</a></li>
+                                <li><a href="">7</a></li>
+                                <li><a href="">0</a></li>
+                            </ul>
+                        </div>
+                        <div class="page__calculate-foot-tabs-item">
+                            <h4>Полное сравнение со старым размером </h4>
+                            <p><a href="">Сравнить</a></p>    
+                            <p><a href="">Сравнить</a></p>    
+                            <p><a href="">Сравнить</a></p>    
+                        </div>
+                    </div>
+                </div>
+                <div class="page__calculate-foot-right">
+                    <h2>Таблица похожих типоразмеров шин</h2>
+                    <p>Для удобства подбора и сравнения типоразмеров колес, мы предлагаем вам таблицу наиболее близких по Внешнему диаметру (D) автошин +/- 10 мм, которые есть в нашем каталоге Везём Колёса. Установка колес с разницей внешнего диаметра больше 10 мм не рекомендуется, кроме случаев, когда именно этот типоразмер указан в инструкции по эксплуатации для вашей машины. Калькулятор рассчитывает таблицу относительно первоначально заданного размера шины — Старый размер — 195/65 R15.</p>
+                </div>               
+            </div>
+        </div>
+        <div class="page__calculate-right">
+            <div class="catalog__aside__container">
+                <div class="catalog__aside">
+                    <div class="product-sidebar__banner sidebar-banner">
+                        <div class="sidebar-banner__image">
+                        <picture>
+                            <source srcset="https://storage.yandexcloud.net/nik-auto/vezemkolesa/static/site/assets/img/page/product-card/sidebar-banner@1x.webp 1x,
+                                                        https://storage.yandexcloud.net/nik-auto/vezemkolesa/static/site/assets/img/page/product-card/sidebar-banner@2x.webp 2x" type="image/webp">
+                            <img src="https://storage.yandexcloud.net/nik-auto/vezemkolesa/static/site/assets/img/page/product-card/sidebar-banner@1x.jpg" srcset="https://storage.yandexcloud.net/nik-auto/vezemkolesa/static/site/assets/img/page/product-card/sidebar-banner@2x.jpg 2x" alt="счастливый водитель">
+                        </picture>
+                        </div>
+                        <div class="sidebar-banner__content">
+                            <span class="sidebar-banner__icon"><img src="https://storage.yandexcloud.net/nik-auto/vezemkolesa/static/site/assets/img/page/product-card/sidebar-banner-icon.svg" alt="стрелка влево" aria-hidden=""></span> <span class="sidebar-banner_size_m">Каждый покупатель<br>получает сертификат на</span> <span class="sidebar-banner_size_xl">Бесплатную</span> <span class="sidebar-banner_size_l">эвакуацию</span>
+                        </div>
+                    </div>
+                          
+                    <div class="page__calculate-right-socila">
+                        <ul>
+                            <li><a href=""><img src="img/facebook.svg" alt=""></a></li>
+                            <li><a href=""><img src="img/vk.svg" alt=""></a></li>
+                            <li><a href=""><img src="img/ok.svg" alt=""></a></li>
+                            <li><a href=""><img src="img/telegram.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="page__calculate-right-form">
+                        <div class="page__calculate-right-form-head">
+                            <img src="img/phone.png" alt="">
+                            <h3>Задать вопрос</h3>
+                        </div>
+                        <p>Используйте, если цените свое время и не хотите заполнять большую форму </p>
+                        <form action="">
+                            <input type="text" placeholder="Ваше Имя"><br />
+                            <input type="number" placeholder="Номер телефона"><br />
+                            <button>Перезвоните мне</button>
+                        </form>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+</body>
+</html>
