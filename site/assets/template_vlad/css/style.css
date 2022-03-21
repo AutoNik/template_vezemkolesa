@@ -12232,6 +12232,7 @@ li {
   font-size: 18px;
   line-height: 140%;
   color: #444444;
+  margin: 0;
 }
 .about_content .about_content_cont .about_items {
   width: 100%;
