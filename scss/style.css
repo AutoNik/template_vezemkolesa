@@ -12633,7 +12633,7 @@ li {
     margin-top: 1.04vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content-title {
     font-size: 10vw;
     margin: 5.55vw;
@@ -12651,7 +12651,7 @@ li {
 .tire-service__content__container > .content > section {
   margin: 40px 0;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > section {
     margin: 0;
   }
@@ -12678,10 +12678,9 @@ li {
     margin-bottom: 0.52vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .banner .banner-header {
     font-size: 5.6vw;
-    margin-bottom: 0.52vw;
     order: 1;
     margin-bottom: 2.7vw;
     line-height: 120%;
@@ -12702,7 +12701,7 @@ li {
     margin-bottom: 1.5625vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .banner .banner-text {
     font-size: 5vw;
     order: 3;
@@ -12717,7 +12716,7 @@ li {
   width: 60%;
   justify-content: flex-start;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .banner .banner-list {
     flex-direction: column;
     width: 100%;
@@ -12748,7 +12747,7 @@ li {
     margin-bottom: 0.52vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .banner .banner-list li {
     font-size: 4.16vw;
     background-size: 5vw 4vw;
@@ -12821,7 +12820,7 @@ li {
     padding-top: 1.04vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .banner .banner-form {
     order: 2;
     width: 100%;
@@ -12833,12 +12832,11 @@ li {
   }
 }
 .tire-service__content__container > .content > .banner .banner-form input::placeholder {
-  color: #949DA7;
+  color: #949da7;
 }
 .tire-service__content__container > .content > .banner .banner-form input[type=text] {
   width: 52%;
   height: 50px;
-  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 21px;
@@ -12859,7 +12857,7 @@ li {
     border-radius: 0.21vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .banner .banner-form input[type=text] {
     width: 100%;
     height: 11.1vw;
@@ -12872,13 +12870,13 @@ li {
   width: 40%;
   background: #0E8ECF;
   border-radius: 4px;
-  font-family: "Open Sans Condensed";
+  font-family: "Open Sans Condensed", "Roboto", sans-serif;
   text-transform: uppercase;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 100%;
-  color: #FFFFFF;
+  color: #fff;
   border: none;
 }
 @media (max-width: 1920px) {
@@ -12887,7 +12885,7 @@ li {
     font-size: 0.9375vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .banner .banner-form input[type=submit] {
     border-radius: 1.11vw;
     font-size: 5vw;
@@ -12903,7 +12901,7 @@ li {
     background-size: 50.73vw 25.99vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .banner {
     padding: 49.45vw 5.555% 11.1vw 5.555%;
     background-image: url(../site/assets/img/page/tire-service/main-banner-mobile.png);
@@ -12923,7 +12921,7 @@ li {
   width: 29%;
   object-fit: contain;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .underbanner .secondary-banner {
     width: 100%;
     order: 2;
@@ -12953,7 +12951,7 @@ li {
     margin-right: 0.52vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .underbanner .services-block-row .advantages-item img {
     width: 17.77vw;
     height: 17.77vw;
@@ -12966,31 +12964,31 @@ li {
   margin-bottom: 12px;
 }
 .tire-service__content__container > .content > .underbanner .services-block-row .advantages-item .description h3 {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 120%;
-  color: #444444;
+  color: #444;
 }
 @media (max-width: 1920px) {
   .tire-service__content__container > .content > .underbanner .services-block-row .advantages-item .description h3 {
     font-size: 1.04vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .underbanner .services-block-row .advantages-item .description h3 {
     font-size: 5.55vw;
     line-height: 120%;
   }
 }
 .tire-service__content__container > .content > .underbanner .services-block-row .advantages-item .description p {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
-  color: #444444;
+  color: #444;
   opacity: 0.5;
 }
 @media (max-width: 1920px) {
@@ -12998,7 +12996,7 @@ li {
     font-size: 0.833vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .underbanner .services-block-row .advantages-item .description p {
     font-size: 4.44vw;
     line-height: 120%;
@@ -13010,13 +13008,13 @@ li {
     margin-bottom: 0.625vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .underbanner .services-block-row .advantages-item .description {
     margin-bottom: 0;
     padding: 2.77vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .underbanner .services-block-row .advantages-item {
     width: 100%;
     display: flex;
@@ -13024,7 +13022,7 @@ li {
     align-items: center;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .underbanner .services-block-row {
     width: 100%;
     order: 1;
@@ -13033,7 +13031,7 @@ li {
     padding: 8.33vw 5.555% 5.55vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .underbanner {
     flex-direction: column;
     justify-content: flex-start;
@@ -13049,14 +13047,14 @@ li {
   margin-top: 40px;
 }
 .tire-service__content__container > .content > .map .adresses p {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
   display: flex;
   align-items: center;
-  color: #444444;
+  color: #444;
   padding: 4.5px 8px;
   margin-bottom: 4px;
   transition: 0.3s;
@@ -13111,7 +13109,7 @@ li {
 }
 .tire-service__content__container > .content > .map .adresses .active p {
   background: #99CEE9;
-  color: #FFFFFF;
+  color: #fff;
   border-radius: 4px;
   border: 1px solid #99CEE9;
 }
@@ -13163,12 +13161,12 @@ li {
   }
 }
 .tire-service__content__container > .content > .advantages h2 {
-  font-family: "Open Sans Condensed";
+  font-family: "Open Sans Condensed", "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 100%;
-  color: #444444;
+  color: #444;
   margin: 0;
 }
 @media (max-width: 1920px) {
@@ -13176,19 +13174,19 @@ li {
     font-size: 1.66vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .advantages h2 {
     font-size: 6.944vw;
     order: 2;
   }
 }
 .tire-service__content__container > .content > .advantages .advantages-text {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
-  color: #444444;
+  color: #444;
   margin-top: 20px;
 }
 .tire-service__content__container > .content > .advantages .advantages-text p {
@@ -13201,7 +13199,7 @@ li {
     line-height: normal;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .advantages .advantages-text p {
     font-size: 4.6vw;
     margin-bottom: 4vw;
@@ -13213,7 +13211,7 @@ li {
     margin-top: 1.04vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .advantages .advantages-text {
     font-size: 4.6vw;
     line-height: 120%;
@@ -13222,7 +13220,7 @@ li {
   }
 }
 .tire-service__content__container > .content > .advantages .read-more {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -13241,7 +13239,7 @@ li {
     margin-bottom: 2.08vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .advantages .read-more {
     font-size: 4.6vw;
     margin-bottom: 0;
@@ -13268,7 +13266,7 @@ li {
   margin-bottom: 10px;
 }
 .tire-service__content__container > .content > .advantages .services .service-item p {
-  font-family: "Open Sans Condensed";
+  font-family: "Open Sans Condensed", "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -13282,7 +13280,7 @@ li {
     margin-left: 1.04vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .advantages .services .service-item p {
     font-size: 4vw;
     margin-left: 0;
@@ -13298,7 +13296,7 @@ li {
     height: 2.5vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .advantages .services .service-item img {
     width: 13.33vw;
     height: 13.33vw;
@@ -13314,7 +13312,7 @@ li {
     margin-bottom: 0.52vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .advantages .services .service-item {
     padding: 2.77vw;
     padding-top: 2.22vw;
@@ -13331,13 +13329,13 @@ li {
     margin-bottom: -0.625vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .advantages .services {
     order: 1;
     margin-bottom: 5.3vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .advantages {
     padding: 11.1vw 5.555% 8.33vw;
     display: flex;
@@ -13345,12 +13343,12 @@ li {
   }
 }
 .tire-service__content__container > .content > .cost h2 {
-  font-family: "Open Sans Condensed";
+  font-family: "Open Sans Condensed", "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 100%;
-  color: #444444;
+  color: #444;
   margin: 0;
 }
 @media (max-width: 1920px) {
@@ -13358,7 +13356,7 @@ li {
     font-size: 1.66vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost h2 {
     font-size: 6.944vw;
     order: 2;
@@ -13371,15 +13369,15 @@ li {
   align-items: center;
   margin: 30px 0;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-radio .radio {
     width: 100%;
     filter: drop-shadow(0px 1.11vw 3.33vw rgba(0, 0, 0, 0.15));
     border-radius: 6px;
-    background: #F9F9F9;
+    background: #f9f9f9;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-radio .radio-2 {
     display: none;
   }
@@ -13393,13 +13391,13 @@ li {
   display: inline-flex;
   align-items: center;
   user-select: none;
-  font-family: "Open Sans Condensed";
+  font-family: "Open Sans Condensed", "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 23px;
   line-height: 100%;
   text-transform: uppercase;
-  color: #444444;
+  color: #444;
   transition: 0.3s;
   padding: 20px;
   height: 63px;
@@ -13412,7 +13410,7 @@ li {
     box-sizing: border-box;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-radio .custom-radio + label {
     font-size: 5vw;
     line-height: 100%;
@@ -13448,7 +13446,7 @@ li {
     margin-right: 0.78125vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-radio .custom-radio + label::before {
     width: 0vw;
     height: 0vw;
@@ -13481,44 +13479,44 @@ li {
     margin-left: 0.46975vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-radio .custom-radio:checked + label::before {
     width: 0vw;
     height: 0vw;
     margin-left: 0vw;
-    background: #F9F9F9;
+    background: #f9f9f9;
   }
 }
 .tire-service__content__container > .content > .cost .cost-radio .custom-radio:checked + label {
   color: #1E9CDB;
-  background: #F9F9F9;
+  background: #f9f9f9;
 }
 .tire-service__content__container > .content > .cost .cost-radio .custom-radio:disabled + label::before {
   background-color: #e9ecef;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-radio .switch-button img:hover {
     filter: grayscale(100%);
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-radio .switch-button img {
     height: 1.94vw;
     object-fit: contain;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-radio .switch-button img:nth-child(1) {
     transform: rotate(180deg);
     margin-left: -0.25vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-radio .switch-button:hover {
     cursor: pointer;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-radio .switch-button {
     width: 10vw;
     height: 10vw;
@@ -13537,7 +13535,7 @@ li {
     margin: 1.5625vw 0;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-radio {
     flex-direction: column;
     align-items: flex-start;
@@ -13546,7 +13544,7 @@ li {
     margin-top: 5.55vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .separator {
     width: 100%;
     height: 0.27vw;
@@ -13559,28 +13557,28 @@ li {
   border-collapse: collapse;
   border: 2px solid white;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-table tr td:nth-child(8), .tire-service__content__container > .content > .cost .cost-table tr td:nth-child(7), .tire-service__content__container > .content > .cost .cost-table tr td:nth-child(6), .tire-service__content__container > .content > .cost .cost-table tr td:nth-child(5), .tire-service__content__container > .content > .cost .cost-table tr td:nth-child(4), .tire-service__content__container > .content > .cost .cost-table tr td:nth-child(3) {
     display: none;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-table tr th:nth-child(1), .tire-service__content__container > .content > .cost .cost-table tr td:nth-child(1) {
     width: 68%;
     text-align: left;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-table tr td:nth-child(1) br {
     display: none;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-table tr:nth-child(1) {
     display: none;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-table tr {
     position: relative;
   }
@@ -13588,12 +13586,11 @@ li {
 .tire-service__content__container > .content > .cost .cost-table tr td, .tire-service__content__container > .content > .cost .cost-table tr th {
   text-align: center;
   padding: 10px;
-  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 110%;
-  color: #444444;
+  color: #444;
   border: 1px solid #99CEE9;
   vertical-align: middle;
 }
@@ -13604,29 +13601,29 @@ li {
     border: 0.05vw solid #99CEE9;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-table tr td, .tire-service__content__container > .content > .cost .cost-table tr th {
     border: none;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-table tr td {
     padding: 2.77vw;
     font-size: 3.88vw;
     border: none;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-table tr th span {
     color: #1E9CBD;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-table tr th {
     font-size: 5vw;
     padding: 2.77vw;
     background: #fff !important;
-    color: #444444 !important;
+    color: #444 !important;
     line-height: 120% !important;
   }
 }
@@ -13634,34 +13631,34 @@ li {
   width: 22.8%;
   text-align: left;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-table tr th:nth-child(1), .tire-service__content__container > .content > .cost .cost-table tr td:nth-child(1) {
     width: 68%;
     text-align: left;
   }
 }
 .tire-service__content__container > .content > .cost .cost-table tr:nth-child(1) th {
-  background: #949DA7;
+  background: #949da7;
   font-weight: 700;
   color: #fff;
-  border: 1px solid #949DA7;
+  border: 1px solid #949da7;
 }
 @media (max-width: 1920px) {
   .tire-service__content__container > .content > .cost .cost-table tr:nth-child(1) th {
-    border: 0.05vw solid #949DA7;
+    border: 0.05vw solid #949da7;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-table tr:nth-child(1) th {
     border: none;
   }
 }
 .tire-service__content__container > .content > .cost .cost-table tr:nth-child(2) th {
-  background: #F9F9F9;
+  background: #f9f9f9;
   font-weight: 700;
-  border-right: 1px solid #F9F9F9;
+  border-right: 1px solid #f9f9f9;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-table tr:nth-child(2) th span {
     position: absolute;
     top: 5.55vw;
@@ -13670,34 +13667,34 @@ li {
 }
 @media (max-width: 1920px) {
   .tire-service__content__container > .content > .cost .cost-table tr:nth-child(2) th {
-    border-right: 0.05vw solid #F9F9F9;
+    border-right: 0.05vw solid #f9f9f9;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-table tr:nth-child(2) th {
     border-right: none;
   }
 }
 .tire-service__content__container > .content > .cost .cost-table tr:nth-child(8) th {
-  background: #949DA7;
+  background: #949da7;
   font-weight: 700;
   color: #fff;
-  border: 1px solid #949DA7;
+  border: 1px solid #949da7;
   border-bottom: 1px solid #99CEE9;
 }
 @media (max-width: 1920px) {
   .tire-service__content__container > .content > .cost .cost-table tr:nth-child(8) th {
-    border: 0.05vw solid #949DA7;
+    border: 0.05vw solid #949da7;
     border-bottom: 0.05vw solid #99CEE9;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-table tr:nth-child(8) th {
     border: none;
     border-bottom: none;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-table tr:nth-child(8) th, .tire-service__content__container > .content > .cost .cost-table tr:nth-child(2) th, .tire-service__content__container > .content > .cost .cost-table tr:nth-child(9) td, .tire-service__content__container > .content > .cost .cost-table tr:nth-child(10) td, .tire-service__content__container > .content > .cost .cost-table tr:nth-child(11) td, .tire-service__content__container > .content > .cost .cost-table tr:nth-child(12) td {
     padding: 5.55vw 2.77vw;
   }
@@ -13707,7 +13704,7 @@ li {
     border: 0.1vw solid white;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .cost-table {
     border: none;
     margin-bottom: 11.1vw;
@@ -13725,17 +13722,16 @@ li {
   cursor: pointer;
   align-items: center;
   width: 100%;
-  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 140%;
-  color: #949DA7;
+  color: #949da7;
   padding: 0 16.5px 0 10px;
   transition: 0.3s;
   height: 40px !important;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost #select-1 .select__toggle {
     height: 11.1vw !important;
     font-size: 5vw;
@@ -13755,7 +13751,7 @@ li {
   background-image: url(../site/assets/img/page/tire-service/blue-arrow-down.svg);
   background-repeat: no-repeat;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost #select-1 .select__toggle::after {
     content: "";
     height: 1.94vw;
@@ -13776,7 +13772,7 @@ li {
   z-index: 2;
   background-color: #fff;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost #select-1 .select__dropdown {
     top: 11.1vw;
     border: 0.27vw solid #DBE2E9;
@@ -13789,7 +13785,7 @@ li {
   padding: 0;
   list-style: none;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost #select-1 .select__option {
     padding: 4.16vw 2.77vw;
     padding-right: 4vw;
@@ -13804,14 +13800,14 @@ li {
   background-size: cover;
   background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" height="100" width="100" class="svg-inline--fa fa-check fa-w-16" data-icon="check" data-prefix="fas" aria-hidden="true"%3E%3Cpath d="M33.964 85.547l-32.5-32.251a4.935 4.935 0 010-7.017l7.071-7.017a5.027 5.027 0 017.071 0L37.5 60.987l46.894-46.534a5.028 5.028 0 017.07 0l7.072 7.017a4.935 4.935 0 010 7.017l-57.5 57.06a5.027 5.027 0 01-7.072 0z" fill="%230277bd"/%3E%3C/svg%3E');
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost #select-1 .select__option_selected::after {
     content: "";
     width: 2.77vw;
     height: 2.77vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost #select-1 .select__option_selected {
     background-color: #f9f9f9;
     display: flex;
@@ -13823,12 +13819,12 @@ li {
 .tire-service__content__container > .content > .cost #select-1 .select_show .select__toggle::after {
   transform: rotate(180deg);
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost #select-1 .select_show .select__toggle::after {
     transform: rotate(180deg);
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost #select-1 {
     width: 30vw;
     position: absolute;
@@ -13836,7 +13832,7 @@ li {
     right: 5.55vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost {
     padding: 0 5.555%;
     position: relative;
@@ -13855,12 +13851,11 @@ li {
   cursor: pointer;
   align-items: center;
   width: 100%;
-  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 140%;
-  color: #949DA7;
+  color: #949da7;
   padding: 0 16.5px 0 10px;
   transition: 0.3s;
   height: 40px !important;
@@ -13919,12 +13914,11 @@ li {
 .tire-service__content__container > .content > .cost .select .select__options > .select__option {
   padding: 10px;
   padding-right: 16.5px;
-  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 140%;
-  color: #444444;
+  color: #444;
 }
 @media (max-width: 1920px) {
   .tire-service__content__container > .content > .cost .select .select__options > .select__option {
@@ -13968,18 +13962,18 @@ li {
 .tire-service__content__container > .content > .cost .select_show .select__backdrop {
   display: block;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .cost .mobile {
     display: block;
   }
 }
-@media (min-width: 575px) {
+@media (min-width: 767px) {
   .tire-service__content__container > .content > .cost .mobile {
     display: none;
   }
 }
 .tire-service__content__container > .content > .tirefitting-order {
-  background: #F9F9F9;
+  background: #f9f9f9;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
   border-radius: 6px;
   padding: 65px 30px;
@@ -13990,12 +13984,12 @@ li {
   height: 280px;
 }
 .tire-service__content__container > .content > .tirefitting-order h2 {
-  font-family: "Open Sans Condensed";
+  font-family: "Open Sans Condensed", "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 100%;
-  color: #444444;
+  color: #444;
   margin: 0;
 }
 @media (max-width: 1920px) {
@@ -14003,7 +13997,7 @@ li {
     font-size: 1.66vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content > .tirefitting-order h2 {
     font-size: 6.944vw;
   }
@@ -14028,12 +14022,11 @@ li {
   cursor: pointer;
   align-items: center;
   width: 100%;
-  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 140%;
-  color: #949DA7;
+  color: #949da7;
   padding: 0 16.5px 0 10px;
   transition: 0.3s;
   height: 40px !important;
@@ -14094,12 +14087,11 @@ li {
   list-style: none;
   padding: 10px;
   padding-right: 16.5px;
-  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 140%;
-  color: #444444;
+  color: #444;
 }
 @media (max-width: 1920px) {
   .tire-service__content__container > .content > .tirefitting-order form .select-row .select .select__options > .select__option {
@@ -14145,7 +14137,6 @@ li {
 }
 .tire-service__content__container > .content > .tirefitting-order form .select-row input[type=date], .tire-service__content__container > .content > .tirefitting-order form .select-row input[type=time] {
   width: 17.1%;
-  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -14153,7 +14144,7 @@ li {
   line-height: 140%;
   display: flex;
   align-items: center;
-  color: #949DA7;
+  color: #949da7;
   padding: 0 16.5px 0 10px;
   border: 1px solid #DBE2E9;
   border-radius: 4px;
@@ -14203,12 +14194,12 @@ li {
   }
 }
 .tire-service__content__container > .content > .tirefitting-order form .select-row input[type=date]:focus, .tire-service__content__container > .content > .tirefitting-order form .select-row input[type=time]:focus, .tire-service__content__container > .content > .tirefitting-order form .select-row .select__toggle:focus {
-  color: #444444;
-  border: 1px solid #444444;
+  color: #444;
+  border: 1px solid #444;
 }
 @media (max-width: 1920px) {
   .tire-service__content__container > .content > .tirefitting-order form .select-row input[type=date]:focus, .tire-service__content__container > .content > .tirefitting-order form .select-row input[type=time]:focus, .tire-service__content__container > .content > .tirefitting-order form .select-row .select__toggle:focus {
-    border: 0.05vw solid #444444;
+    border: 0.05vw solid #444;
   }
 }
 @media (max-width: 1920px) {
@@ -14222,13 +14213,13 @@ li {
   height: 38px;
   background: #0E8ECF;
   border-radius: 4px;
-  font-family: "Open Sans Condensed";
+  font-family: "Open Sans Condensed", "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 100%;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #fff;
   border: 0.05vw solid #0E8ECF;
   cursor: pointer;
 }
@@ -14254,8 +14245,8 @@ li {
     background-size: 19.375vw 14.58vw;
   }
 }
-@media (max-width: 575px) {
-  .tire-service__content__container > .content .descktop {
+@media (max-width: 767px) {
+  .tire-service__content__container > .content .desktop {
     display: none;
   }
 }
@@ -14264,7 +14255,7 @@ li {
     font-size: 1.66vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .content {
     width: 100%;
   }
@@ -14276,7 +14267,7 @@ li {
   width: 19.9%;
 }
 .tire-service__content__container > .tire-service-sidebar > .tire-order {
-  background: #F9F9F9;
+  background: #f9f9f9;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
   border-radius: 6px;
   padding: 40px 30px 46px;
@@ -14311,12 +14302,12 @@ li {
   }
 }
 .tire-service__content__container > .tire-service-sidebar > .tire-order .tire-order-header h2 {
-  font-family: "Open Sans Condensed";
+  font-family: "Open Sans Condensed", "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 100%;
-  color: #444444;
+  color: #444;
   margin: 0;
 }
 @media (max-width: 1920px) {
@@ -14324,7 +14315,7 @@ li {
     font-size: 1.66vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .tire-service-sidebar > .tire-order .tire-order-header h2 {
     font-size: 6.944vw;
   }
@@ -14335,12 +14326,11 @@ li {
   }
 }
 .tire-service__content__container > .tire-service-sidebar > .tire-order .tire-order-text {
-  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 120%;
-  color: #444444;
+  color: #444;
   margin-bottom: 30px;
 }
 @media (max-width: 1920px) {
@@ -14354,14 +14344,13 @@ li {
   flex-direction: column;
 }
 .tire-service__content__container > .tire-service-sidebar > .tire-order .tire-order-form input {
-  background: #FFFFFF;
+  background: #fff;
   border: 1px solid #DBE2E9;
   box-sizing: border-box;
   border-radius: 4px;
   width: 100%;
   margin-bottom: 20px;
   height: 40px;
-  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -14383,7 +14372,7 @@ li {
 }
 .tire-service__content__container > .tire-service-sidebar > .tire-order .tire-order-form input[type=submit] {
   width: 60%;
-  font-family: "Open Sans Condensed";
+  font-family: "Open Sans Condensed", "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -14393,14 +14382,14 @@ li {
   flex-direction: row;
   justify-content: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #fff;
   background: #0E8ECF;
   height: 52px;
   margin-bottom: 0px;
   margin-top: 10px;
 }
 .tire-service__content__container > .tire-service-sidebar > .tire-order .tire-order-form input::placeholder {
-  color: #444444;
+  color: #444;
 }
 .tire-service__content__container > .tire-service-sidebar > .tire-order .tire-order-form input[type=submit] {
   border: 1px solid #0E8ECF;
@@ -14431,19 +14420,19 @@ li {
   margin-top: 30px;
 }
 .tire-service__content__container > .tire-service-sidebar > .promotions h2 {
-  font-family: "Open Sans Condensed";
+  font-family: "Open Sans Condensed", "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 100%;
-  color: #444444;
+  color: #444;
 }
 @media (max-width: 1920px) {
   .tire-service__content__container > .tire-service-sidebar > .promotions h2 {
     font-size: 1.66vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .tire-service-sidebar > .promotions h2 {
     font-size: 10vw;
     line-height: 100%;
@@ -14467,7 +14456,7 @@ li {
   padding: 20px 10px 10px 10px;
 }
 .tire-service__content__container > .tire-service-sidebar > .promotions .promotion-card .promotion-content .promotion-card-header {
-  font-family: "Open Sans Condensed";
+  font-family: "Open Sans Condensed", "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 23px;
@@ -14482,7 +14471,7 @@ li {
     margin-bottom: 1.04vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .tire-service-sidebar > .promotions .promotion-card .promotion-content .promotion-card-header {
     font-size: 6.38vw;
     margin-bottom: 2.77vw;
@@ -14492,19 +14481,19 @@ li {
   color: #013154;
 }
 .tire-service__content__container > .tire-service-sidebar > .promotions .promotion-card .promotion-content .promotion-card-text {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
-  color: #444444;
+  color: #444;
 }
 @media (max-width: 1920px) {
   .tire-service__content__container > .tire-service-sidebar > .promotions .promotion-card .promotion-content .promotion-card-text {
     font-size: 0.83vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .tire-service-sidebar > .promotions .promotion-card .promotion-content .promotion-card-text {
     font-size: 5vw;
   }
@@ -14514,13 +14503,13 @@ li {
     padding: 1.04vw 0.52vw 0.52vw 0.52vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .tire-service-sidebar > .promotions .promotion-card .promotion-content {
     padding: 2.77vw;
     margin-top: 2.77vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .tire-service-sidebar > .promotions .promotion-card br {
     display: none;
   }
@@ -14530,7 +14519,7 @@ li {
     margin-top: 2.08vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .tire-service-sidebar > .promotions .promotion-card {
     margin-top: 0;
     margin-bottom: 11.1vw;
@@ -14541,41 +14530,41 @@ li {
     margin-top: 1.5625vw;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .tire-service-sidebar > .promotions {
     margin-top: 0;
     padding: 0 5.555%;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container > .tire-service-sidebar {
     width: 100%;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content__container {
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service__content {
     padding: 0;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .tire-service .mobile {
     display: block;
   }
 }
-@media (min-width: 575px) {
+@media (min-width: 767px) {
   .tire-service .mobile {
     display: none;
   }
 }
-@media (max-width: 575px) {
-  .tire-service .descktop {
+@media (max-width: 767px) {
+  .tire-service .desktop {
     display: none;
   }
 }
@@ -14587,7 +14576,7 @@ li {
   margin: 0 auto;
   padding: 1.04vw;
   padding-top: 1.61vw;
-  background: #FFFFFF;
+  background: #fff;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
   position: fixed;
   top: 0;
@@ -14604,6 +14593,24 @@ li {
 #myModal > h2 {
   text-align: left;
   width: 100%;
+  font-family: "Open Sans Condensed", "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  color: #444;
+  margin: 0;
+}
+@media (max-width: 1920px) {
+  #myModal > h2 {
+    font-size: 1.66vw;
+  }
+}
+@media (max-width: 767px) {
+  #myModal > h2 {
+    font-size: 6.944vw;
+    order: 2;
+  }
 }
 #myModal #myModal__close {
   width: 1.25vw;
@@ -14651,12 +14658,12 @@ li {
   padding-right: 0.52vw;
 }
 #myModal > .cart-item .cart-item-right .cart-item-name {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 0.729vw;
   line-height: 120%;
-  color: #444444;
+  color: #444;
   opacity: 0.3;
 }
 @media (max-width: 360px) {
@@ -14665,7 +14672,7 @@ li {
   }
 }
 #myModal > .cart-item .cart-item-right .cart-item-product-name {
-  font-family: "Open Sans Condensed";
+  font-family: "Open Sans Condensed", "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 0.9375vw;
@@ -14712,7 +14719,6 @@ li {
   }
 }
 #myModal > .cart-item .cart-item-right .cart-item-right-bottom > div .cart-item-remove {
-  padding-bottom: 0.3vw;
   margin-right: 0.26vw;
 }
 @media (max-width: 360px) {
@@ -14734,7 +14740,7 @@ li {
   cursor: pointer;
 }
 #myModal > .cart-item .cart-item-right .cart-item-right-bottom > div .quantity {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 0.83vw;
@@ -14743,7 +14749,7 @@ li {
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: #444444;
+  color: #444;
   padding: 0 0.26vw;
 }
 @media (max-width: 360px) {
@@ -14754,7 +14760,7 @@ li {
 }
 #myModal > .cart-item .cart-item-right .cart-item-right-bottom > div .price {
   margin-left: 0.52vw;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 0.9375vw;
@@ -14769,12 +14775,12 @@ li {
   }
 }
 #myModal > .cart-item .cart-item-right .cart-item-right-bottom > div .articul {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 0.83vw;
   line-height: 120%;
-  color: #444444;
+  color: #444;
 }
 @media (max-width: 360px) {
   #myModal > .cart-item .cart-item-right .cart-item-right-bottom > div .articul {
@@ -14827,7 +14833,7 @@ li {
   background: #0E8ECF;
   border-radius: 0.2vw;
   border: 0.05vw solid #0E8ECF;
-  font-family: "Open Sans Condensed";
+  font-family: "Open Sans Condensed", "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 0.9375vw;
