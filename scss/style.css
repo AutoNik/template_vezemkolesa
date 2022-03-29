@@ -12659,7 +12659,7 @@ li {
 .tire-service__content__container > .content > .banner {
   background: #03365B;
   padding: 52px 60px 60px;
-  background-image: url(../site/assets/img/page/tire-service/main-banner.png);
+  background-image: url(../img/page/tire-service/main-banner.png);
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -12731,7 +12731,7 @@ li {
   font-size: 18px;
   line-height: 110%;
   color: #fff;
-  background-image: url(../site/assets/img/page/tire-service/blue-chek.svg);
+  background-image: url(../img/page/tire-service/blue-chek.svg);
   background-size: 13px 10.5px;
   background-repeat: no-repeat;
   background-position: top 3px left;
@@ -12898,13 +12898,13 @@ li {
   .tire-service__content__container > .content > .banner {
     margin: 2.08vw 0;
     padding: 2.6vw 3.125vw 3.125vw;
-    background-size: 50.73vw 25.99vw;
+    background-size: 50.73vw 27.7vw;
   }
 }
 @media (max-width: 767px) {
   .tire-service__content__container > .content > .banner {
     padding: 49.45vw 5.555% 11.1vw 5.555%;
-    background-image: url(../site/assets/img/page/tire-service/main-banner-mobile.png);
+    background-image: url(../img/page/tire-service/main-banner-mobile.png);
     background-size: 100vw 138.61vw;
     background-position: top;
     height: fit-content;
@@ -13094,7 +13094,7 @@ li {
   width: 21px;
   height: 21px;
   margin-right: 5px;
-  background: url(../site/assets/img/page/tire-service/metro-2.svg);
+  background: url(../img/page/tire-service/metro-2.svg);
   background-size: 21px 21px;
   display: inline-block;
   pointer-events: none;
@@ -13120,7 +13120,7 @@ li {
   }
 }
 .tire-service__content__container > .content > .map .adresses .active .metro-icon {
-  background: url(../site/assets/img/page/tire-service/metro-1.svg);
+  background: url(../img/page/tire-service/metro-1.svg);
   background-size: 21px 21px;
 }
 @media (max-width: 1920px) {
@@ -13273,6 +13273,7 @@ li {
   line-height: 100%;
   color: #1E9CDB;
   margin-left: 20px;
+  margin-bottom: 0;
 }
 @media (max-width: 1920px) {
   .tire-service__content__container > .content > .advantages .services .service-item p {
@@ -13748,7 +13749,7 @@ li {
   flex-shrink: 0;
   margin-left: 10px;
   background-size: contain;
-  background-image: url(../site/assets/img/page/tire-service/blue-arrow-down.svg);
+  background-image: url(../img/page/tire-service/blue-arrow-down.svg);
   background-repeat: no-repeat;
 }
 @media (max-width: 767px) {
@@ -13876,7 +13877,7 @@ li {
   flex-shrink: 0;
   margin-left: 10px;
   background-size: contain;
-  background-image: url(../site/assets/img/page/tire-service/blue-arrow-down.svg);
+  background-image: url(../img/page/tire-service/blue-arrow-down.svg);
   background-repeat: no-repeat;
 }
 @media (max-width: 1920px) {
@@ -13977,7 +13978,7 @@ li {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
   border-radius: 6px;
   padding: 65px 30px;
-  background-image: url(../site/assets/img/page/tire-service/dispetcher.png);
+  background-image: url(../img/page/tire-service/dispetcher.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: 372px 280px;
@@ -14047,7 +14048,7 @@ li {
   flex-shrink: 0;
   margin-left: 10px;
   background-size: contain;
-  background-image: url(../site/assets/img/page/tire-service/blue-arrow-down.svg);
+  background-image: url(../img/page/tire-service/blue-arrow-down.svg);
   background-repeat: no-repeat;
 }
 @media (max-width: 1920px) {
@@ -14164,7 +14165,7 @@ li {
 .tire-service__content__container > .content > .tirefitting-order form .select-row input[type=date]::-webkit-calendar-picker-indicator, .tire-service__content__container > .content > .tirefitting-order form .select-row input[type=time]::-webkit-calendar-picker-indicator {
   color: transparent;
   opacity: 1;
-  background: url(../site/assets/img/page/tire-service/gray-arrow-down.svg) no-repeat right;
+  background: url(../img/page/tire-service/gray-arrow-down.svg) no-repeat right;
   background-size: 14px 7px;
   width: 14px;
 }
@@ -14183,7 +14184,7 @@ li {
 .tire-service__content__container > .content > .tirefitting-order form .select-row input[type=date]:focus::-webkit-calendar-picker-indicator, .tire-service__content__container > .content > .tirefitting-order form .select-row input[type=time]:focus::-webkit-calendar-picker-indicator {
   transform: rotate(180deg);
   background-position: left center;
-  background: url(../site/assets/img/page/tire-service/blue-arrow-down.svg) no-repeat left;
+  background: url(../img/page/tire-service/blue-arrow-down.svg) no-repeat left;
   width: 14px;
   background-size: 14px 7px;
 }
