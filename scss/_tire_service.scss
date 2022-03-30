@@ -51,9 +51,31 @@
 
           background: #03365B;
           padding: 52px 60px 60px;
-          background-image: url(../img/page/tire-service/main-banner.png);
-          background-repeat: no-repeat;
-          background-position: right;
+          position: relative;
+          overflow: hidden;
+
+          .banner-image {
+            position: absolute;
+            height: 100%;
+            top: 0;
+            right: 0;
+            z-index: 0;
+
+            > img {
+              height: 100%;
+              object-fit: contain;
+
+              @media(max-width: $md3 - 1 + px) {
+                height: auto;
+                width: 100%;
+              }
+
+            }
+
+            @media(max-width: $md3 - 1 + px) {
+              width: 100%;
+            }
+          }
 
           .banner-header {
             font-family: $font-roboto;
@@ -63,6 +85,8 @@
             line-height: 110%;
             color: $cWhite;
             margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
 
             @media(max-width: $md0 - 1 + px) {
               font-size: 1.875vw;
@@ -85,6 +109,8 @@
             line-height: 110%;
             color: #79D2FF;
             margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
 
             @media(max-width: $md0 - 1 + px) {
               font-size: 1.3vw;
@@ -106,6 +132,8 @@
             flex-wrap: wrap;
             width: 60%;
             justify-content: flex-start;
+            position: relative;
+            z-index: 1;
 
             @media(max-width: $md3 - 1 + px) {
               flex-direction: column;
@@ -117,82 +145,62 @@
           }
 
           .banner-list li {
-            font-family: $font-roboto;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 110%;
-            color: $cWhite;
-            background-image: url(../img/page/tire-service/blue-chek.svg);
-            background-size: 13px 10.5px;
-            background-repeat: no-repeat;
-            background-position: top 3px left;
-            padding-left: 25px;
             margin-bottom: 10px;
+            display: flex;
+            width: 100%;
+            max-width: #{calc(100% / 3)};
+
+            > .image {
+              height: 100%;
+              max-height: 12px;
+              margin-right: 10px;
+              @media(max-width: $md3 - 1 + px) {
+                max-height: 15px;
+              }
+
+              > img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+                vertical-align: text-top;
+              }
+            }
+
+            > p {
+              margin: 0;
+              font-family: $font-roboto;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 110%;
+              color: $cWhite;
+
+              br {
+                @media(max-width: $md3 - 1 + px) {
+                  display: none;
+                }
+              }
+
+              @media(max-width: $md0 - 1 + px) {
+                font-size: 0.9375vw;
+              }
+
+              @media(max-width: $md3 - 1 + px) {
+                font-size: 4.16vw;
+              }
+            }
 
             @media(max-width: $md0 - 1 + px) {
-              font-size: 0.9375vw;
-              background-size: 0.677vw 0.5469vw;
-              background-position: top 0.15625vw left;
-              padding-left: 1.302vw;
+
               margin-bottom: 0.52vw;
             }
 
             @media(max-width: $md3 - 1 + px) {
-              font-size: 4.16vw;
-              background-size: 5vw 4vw;
-              background-position: top left;
-              padding-left: 7.77vw;
               margin-bottom: 4.1vw;
-              margin-right: 0 !important;
-
-              br {
-                display: none;
-              }
+              align-items: center;
+              max-width: 100%;
             }
 
-          }
-
-          .banner-list li:nth-child(1) {
-            margin-right: 89px;
-            @media(max-width: $md0 - 1 + px) {
-              margin-right: 4.635vw;
-            }
-          }
-
-          .banner-list li:nth-child(2) {
-            margin-right: 13px;
-            @media(max-width: $md0 - 1 + px) {
-              margin-right: 0.677vw;
-            }
-          }
-
-          .banner-list li:nth-child(3) {
-            margin-right: 0px;
-            @media(max-width: $md0 - 1 + px) {
-              margin-right: 0px;
-            }
-          }
-
-          .banner-list li:nth-child(4) {
-            margin-right: 68px;
-            @media(max-width: $md0 - 1 + px) {
-              margin-right: 3.541vw;
-            }
-          }
-
-          .banner-list li:nth-child(5) {
-            margin-right: 30px;
-            @media(max-width: $md0 - 1 + px) {
-              margin-right: 1.5vw;
-            }
-          }
-
-          .banner-list li:nth-child(6) {
-            margin-right: 0px;
-            @media(max-width: $md0 - 1 + px) {
-              margin-right: 0px;
-            }
           }
 
           .banner-form {
@@ -201,6 +209,8 @@
             justify-content: space-between;
             width: 34%;
             padding-top: 20px;
+            position: relative;
+            z-index: 1;
 
             @media(max-width: $md0 - 1 + px) {
               padding-top: 1.04vw;
@@ -292,9 +302,6 @@
 
           @media(max-width: $md3 - 1 + px) {
             padding: 49.45vw 5.555% 11.1vw 5.555%;
-            background-image: url(../img/page/tire-service/main-banner-mobile.png);
-            background-size: 100vw 138.61vw;
-            background-position: top;
             height: fit-content;
             display: flex;
             flex-direction: column;
@@ -487,16 +494,23 @@
               width: 21px;
               height: 21px;
               margin-right: 5px;
-              background: url(../img/page/tire-service/metro-2.svg);
-              background-size: 21px 21px;
               display: inline-block;
               pointer-events: none;
+
+              > .metro-1 {
+                display: none;
+                height: 100%;
+              }
+
+              > .metro-2 {
+                display: flex;
+                height: 100%;
+              }
 
               @media(max-width: $md0 - 1 + px) {
                 width: 1.09vw;
                 height: 1.09vw;
                 margin-right: 0.26vw;
-                background-size: 1.09vw 1.09vw;
               }
             }
 
@@ -515,12 +529,15 @@
               }
 
               .metro-icon {
-                background: url(../img/page/tire-service/metro-1.svg);
-                background-size: 21px 21px;
 
-                @media(max-width: $md0 - 1 + px) {
-                  background-size: 1.09vw 1.09vw;
+                > .metro-1 {
+                  display: flex;
                 }
+
+                > .metro-2 {
+                  display: none;
+                }
+
               }
             }
 
@@ -1151,6 +1168,7 @@
           }
 
           #select-1 {
+            position: relative;
 
             .select__toggle {
               display: flex;
@@ -1178,26 +1196,6 @@
                 border-radius: 1.11vw;
                 border: 0.27vw solid #DBE2E9;
                 color: #1E9cbd;
-              }
-
-            }
-
-            .select__toggle::after {
-              content: '';
-              width: 14px;
-              height: 7px;
-              flex-shrink: 0;
-              margin-left: 10px;
-              background-size: contain;
-              background-image: url(../img/page/tire-service/blue-arrow-down.svg);
-              background-repeat: no-repeat;
-
-              @media(max-width: $md3 - 1 + px) {
-                content: '';
-                height: 1.94vw;
-                width: 3.88vw;
-                object-fit: contain;
-                margin-left: 0;
               }
 
             }
@@ -1236,22 +1234,6 @@
 
             }
 
-            .select__option_selected::after {
-              content: '';
-              width: 10px;
-              height: 10px;
-              color: #0277bd;
-              background-size: cover;
-              background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" height="100" width="100" class="svg-inline--fa fa-check fa-w-16" data-icon="check" data-prefix="fas" aria-hidden="true"%3E%3Cpath d="M33.964 85.547l-32.5-32.251a4.935 4.935 0 010-7.017l7.071-7.017a5.027 5.027 0 017.071 0L37.5 60.987l46.894-46.534a5.028 5.028 0 017.07 0l7.072 7.017a4.935 4.935 0 010 7.017l-57.5 57.06a5.027 5.027 0 01-7.072 0z" fill="%230277bd"/%3E%3C/svg%3E');
-
-              @media(max-width: $md3 - 1 + px) {
-                content: '';
-                width: 2.77vw;
-                height: 2.77vw;
-              }
-
-            }
-
             .select__option_selected {
 
               @media(max-width: $md3 - 1 + px) {
@@ -1260,15 +1242,6 @@
                 align-items: center;
                 justify-content: space-between;
                 color: #1E9cbd;
-              }
-
-            }
-
-            .select_show .select__toggle::after {
-              transform: rotate(180deg);
-
-              @media(max-width: $md3 - 1 + px) {
-                transform: rotate(180deg);
               }
 
             }
@@ -1318,26 +1291,24 @@
               }
             }
 
-            .select__toggle::after {
-              content: '';
-              width: 14px;
-              height: 7px;
-              flex-shrink: 0;
-              margin-left: 10px;
-              background-size: contain;
-              background-image: url(../img/page/tire-service/blue-arrow-down.svg);
-              background-repeat: no-repeat;
-
-              @media(max-width: $md0 - 1 + px) {
-                content: '';
-                width: 0.729vw;
-                height: 0.364vw;
-                margin-left: 0.52vw;
-              }
-            }
-
             .select__toggle:focus {
               outline: none;
+            }
+
+            > .image {
+              position: absolute;
+              top: 50%;
+              right: 5%;
+              //width: 14px;
+              height: 14px;
+              display: flex;
+              transform: translateY(-50%);
+
+              > img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+              }
             }
 
             .select__dropdown {
@@ -1371,6 +1342,22 @@
                 font-size: 17px;
                 line-height: 140%;
                 color: $cTundora;
+                position: relative;
+
+                > .image {
+                  position: absolute;
+                  top: 50%;
+                  right: 10%;
+                  height: 14px;
+                  transform: translateY(-50%);
+                  display: none;
+
+                  > img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                  }
+                }
 
                 @media(max-width: $md0 - 1 + px) {
                   padding: 0.52vw;
@@ -1378,28 +1365,18 @@
                   font-size: 0.88vw;
                 }
               }
-            }
 
-            .select__option_selected {
-              background-color: $color-gray-back;
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-            }
+              > .select__option_selected {
+                background-color: $color-gray-back;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
 
-            .select__option_selected::after {
-              content: '';
-              width: 10px;
-              height: 10px;
-              color: #0277bd;
-              background-size: cover;
-              background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" height="100" width="100" class="svg-inline--fa fa-check fa-w-16" data-icon="check" data-prefix="fas" aria-hidden="true"%3E%3Cpath d="M33.964 85.547l-32.5-32.251a4.935 4.935 0 010-7.017l7.071-7.017a5.027 5.027 0 017.071 0L37.5 60.987l46.894-46.534a5.028 5.028 0 017.07 0l7.072 7.017a4.935 4.935 0 010 7.017l-57.5 57.06a5.027 5.027 0 01-7.072 0z" fill="%230277bd"/%3E%3C/svg%3E');
-
-              @media(max-width: $md0 - 1 + px) {
-                content: '';
-                width: 0.52vw;
-                height: 0.52vw;
+                > .image {
+                  display: flex;
+                }
               }
+
             }
 
             .select__option:hover {
@@ -1410,8 +1387,10 @@
 
           }
 
-          .select_show .select__toggle::after {
-            transform: rotate(180deg);
+          .select_show {
+            > .image {
+              transform: translateY(-50%) rotate(180deg);
+            }
           }
 
           .select_show .select__dropdown {
@@ -1438,11 +1417,22 @@
           box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
           border-radius: 6px;
           padding: 65px 30px;
-          background-image: url(../img/page/tire-service/dispetcher.png);
-          background-repeat: no-repeat;
-          background-position: right;
-          background-size: 372px 280px;
           height: 280px;
+          position: relative;
+          overflow: hidden;
+
+          > .image {
+            position: absolute;
+            height: 100%;
+            top: 0;
+            right: 0;
+            z-index: 0;
+
+            > img {
+              height: 100%;
+              object-fit: cover;
+            }
+          }
 
           h2 {
             font-family: $font-open-sans;
@@ -1452,6 +1442,8 @@
             line-height: 100%;
             color: $cTundora;
             margin: 0;
+            position: relative;
+            z-index: 1;
 
             @media(max-width: $md0 - 1 + px) {
               font-size: 1.66vw;
@@ -1463,6 +1455,8 @@
           }
 
           form {
+            position: relative;
+            z-index: 1;
 
             .select-row {
               display: flex;
@@ -1474,6 +1468,7 @@
               .select {
                 position: relative;
                 width: 17.1%;
+                height: max-content;
 
                 .select__toggle {
                   display: flex;
@@ -1503,21 +1498,18 @@
                   }
                 }
 
-                .select__toggle::after {
-                  content: '';
-                  width: 14px;
+                > .image {
+                  position: absolute;
+                  top: 50%;
+                  right: 5%;
                   height: 7px;
-                  flex-shrink: 0;
-                  margin-left: 10px;
-                  background-size: contain;
-                  background-image: url(../img/page/tire-service/blue-arrow-down.svg);
-                  background-repeat: no-repeat;
+                  display: flex;
+                  transform: translateY(-50%);
 
-                  @media(max-width: $md0 - 1 + px) {
-                    content: '';
-                    width: 0.729vw;
-                    height: 0.364vw;
-                    margin-left: 0.52vw;
+                  > img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
                   }
                 }
 
@@ -1549,8 +1541,6 @@
                 .select__options {
                   margin: 0;
                   list-style: none;
-                  padding: 10px;
-                  padding-right: 16.5px;
                   //font-family: 'Inter';
                   font-style: normal;
                   font-weight: 500;
@@ -1559,34 +1549,41 @@
                   color: $cTundora;
 
                   > .select__option {
+                    position: relative;
+
+                    > .image {
+                      position: absolute;
+                      top: 50%;
+                      right: 10%;
+                      height: 7px;
+                      transform: translateY(-50%);
+                      display: none;
+
+                      > img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: contain;
+                      }
+                    }
+
                     @media(max-width: $md0 - 1 + px) {
                       padding: 0.52vw;
                       padding-right: 0.859375vw;
                       font-size: 0.88vw;
                     }
                   }
-                }
 
-                .select__option_selected {
-                  background-color: $color-gray-back;
-                  display: flex;
-                  align-items: center;
-                  justify-content: space-between;
-                }
+                  > .select__option_selected {
+                    background-color: $color-gray-back;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
 
-                .select__option_selected::after {
-                  content: '';
-                  width: 10px;
-                  height: 10px;
-                  color: #0277bd;
-                  background-size: cover;
-                  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" height="100" width="100" class="svg-inline--fa fa-check fa-w-16" data-icon="check" data-prefix="fas" aria-hidden="true"%3E%3Cpath d="M33.964 85.547l-32.5-32.251a4.935 4.935 0 010-7.017l7.071-7.017a5.027 5.027 0 017.071 0L37.5 60.987l46.894-46.534a5.028 5.028 0 017.07 0l7.072 7.017a4.935 4.935 0 010 7.017l-57.5 57.06a5.027 5.027 0 01-7.072 0z" fill="%230277bd"/%3E%3C/svg%3E');
-
-                  @media(max-width: $md0 - 1 + px) {
-                    content: '';
-                    width: 0.52vw;
-                    height: 0.52vw;
+                    > .image {
+                      display: flex;
+                    }
                   }
+
                 }
 
                 .select__option:hover {
@@ -1609,73 +1606,103 @@
                 display: block;
               }
 
-              input[type='date'], input[type='time'] {
-                width: 17.1%;
-                //font-family: 'Inter';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 17px;
-                height: 40px !important;
-                line-height: 140%;
-                display: flex;
-                align-items: center;
-                color: $cRegentGray;
-                padding: 0 16.5px 0 10px;
-                border: 1px solid #DBE2E9;
-                border-radius: 4px;
-                cursor: pointer;
-                align-items: center;
-                transition: 0.3s;
+              > .date, .appt {
+                position: relative;
+                width: 20%;
 
-                @media(max-width: $md0 - 1 + px) {
-                  font-size: 0.885vw;
-                  height: 2.08vw !important;
-                  padding: 0 0.859375vw 0 0.52vw;
-                  border: 0.05vw solid #DBE2E9;
-                  border-radius: 0.2vw;
+                &:hover {
+                  > .image {
+                    > .blue-arrow {
+                      display: flex;
+                    }
+
+                    > .gray-arrow {
+                      display: none;
+                    }
+                  }
                 }
-              }
 
-              input[type="date"]::-webkit-calendar-picker-indicator, input[type="time"]::-webkit-calendar-picker-indicator {
-                color: transparent;
-                opacity: 1;
-                background: url(../img/page/tire-service/gray-arrow-down.svg) no-repeat right;
-                background-size: 14px 7px;
-                width: 14px;
+                > .image {
+                  position: absolute;
+                  top: 50%;
+                  right: 5%;
+                  height: 7px;
+                  display: flex;
+                  transform: translateY(-50%);
 
-                @media(max-width: $md0 - 1 + px) {
-                  background-size: 0.729vw 0.364vw;
-                  width: 0.729vw;
+                  > img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                  }
+
+                  > .blue-arrow {
+                    display: none;
+                  }
                 }
-              }
 
-              input[type="date"]::-webkit-calendar-picker-indicator:hover, input[type="time"]::-webkit-calendar-picker-indicator:hover {
-                cursor: pointer;
-              }
+                input[type='date'], input[type='time'] {
+                  //font-family: 'Inter';
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 17px;
+                  height: 40px !important;
+                  line-height: 140%;
+                  display: flex;
+                  align-items: center;
+                  color: $cRegentGray;
+                  padding: 0 16.5px 0 10px;
+                  border: 1px solid #DBE2E9;
+                  border-radius: 4px;
+                  cursor: pointer;
+                  align-items: center;
+                  transition: 0.3s;
+                  width: 100%;
 
-              input[type="date"]:hover, input[type="time"]:hover {
-                cursor: pointer !important;
-              }
-
-              input[type="date"]:focus::-webkit-calendar-picker-indicator, input[type="time"]:focus::-webkit-calendar-picker-indicator {
-                transform: rotate(180deg);
-                background-position: left center;
-                background: url(../img/page/tire-service/blue-arrow-down.svg) no-repeat left;
-                width: 14px;
-                background-size: 14px 7px;
-
-                @media(max-width: $md0 - 1 + px) {
-                  width: 0.729vw;
-                  background-size: 0.729vw 0.364vw;
+                  @media(max-width: $md0 - 1 + px) {
+                    font-size: 0.885vw;
+                    height: 2.08vw !important;
+                    padding: 0 0.859375vw 0 0.52vw;
+                    border: 0.05vw solid #DBE2E9;
+                    border-radius: 0.2vw;
+                  }
                 }
-              }
 
-              input[type="date"]:focus, input[type="time"]:focus, .select__toggle:focus {
-                color: $cTundora;
-                border: 1px solid $cTundora;
+                input[type="date"]::-webkit-calendar-picker-indicator, input[type="time"]::-webkit-calendar-picker-indicator {
+                  color: transparent;
+                  opacity: 0;
+                  width: 14px;
 
-                @media(max-width: $md0 - 1 + px) {
-                  border: 0.05vw solid $cTundora;
+                  @media(max-width: $md0 - 1 + px) {
+                    background-size: 0.729vw 0.364vw;
+                    width: 0.729vw;
+                  }
+                }
+
+                input[type="date"]::-webkit-calendar-picker-indicator:hover, input[type="time"]::-webkit-calendar-picker-indicator:hover {
+                  cursor: pointer;
+                }
+
+                input[type="date"]:hover, input[type="time"]:hover {
+                  cursor: pointer !important;
+                }
+
+                input[type="date"]:focus::-webkit-calendar-picker-indicator, input[type="time"]:focus::-webkit-calendar-picker-indicator {
+                  transform: rotate(180deg);
+                  width: 14px;
+
+                  @media(max-width: $md0 - 1 + px) {
+                    width: 0.729vw;
+                  }
+                }
+
+                input[type="date"]:focus, input[type="time"]:focus, .select__toggle:focus {
+                  color: $cTundora;
+                  border: 1px solid $cTundora;
+
+                  @media(max-width: $md0 - 1 + px) {
+                    border: 0.05vw solid $cTundora;
+                  }
                 }
               }
 
@@ -2374,13 +2401,13 @@
     }
 
     @media(max-width: 360px) {
-        width: 39.99vw;
-        height: 6.24vw;
-        border-radius: 0.6vw;
-        border: 0.15vw solid $color-accent;
-        font-size: 2.8125vw;
+      width: 39.99vw;
+      height: 6.24vw;
+      border-radius: 0.6vw;
+      border: 0.15vw solid $color-accent;
+      font-size: 2.8125vw;
 
-      }
+    }
 
   }
 

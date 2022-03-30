@@ -12659,9 +12659,30 @@ li {
 .tire-service__content__container > .content > .banner {
   background: #03365B;
   padding: 52px 60px 60px;
-  background-image: url(../img/page/tire-service/main-banner.png);
-  background-repeat: no-repeat;
-  background-position: right;
+  position: relative;
+  overflow: hidden;
+}
+.tire-service__content__container > .content > .banner .banner-image {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+.tire-service__content__container > .content > .banner .banner-image > img {
+  height: 100%;
+  object-fit: contain;
+}
+@media (max-width: 767px) {
+  .tire-service__content__container > .content > .banner .banner-image > img {
+    height: auto;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .tire-service__content__container > .content > .banner .banner-image {
+    width: 100%;
+  }
 }
 .tire-service__content__container > .content > .banner .banner-header {
   font-family: "Roboto", sans-serif;
@@ -12671,6 +12692,8 @@ li {
   line-height: 110%;
   color: #fff;
   margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 1920px) {
   .tire-service__content__container > .content > .banner .banner-header {
@@ -12694,6 +12717,8 @@ li {
   line-height: 110%;
   color: #79D2FF;
   margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 1920px) {
   .tire-service__content__container > .content > .banner .banner-text {
@@ -12715,6 +12740,8 @@ li {
   flex-wrap: wrap;
   width: 60%;
   justify-content: flex-start;
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 767px) {
   .tire-service__content__container > .content > .banner .banner-list {
@@ -12725,87 +12752,61 @@ li {
   }
 }
 .tire-service__content__container > .content > .banner .banner-list li {
+  margin-bottom: 10px;
+  display: flex;
+  width: 100%;
+  max-width: 33.3333333333%;
+}
+.tire-service__content__container > .content > .banner .banner-list li > .image {
+  height: 100%;
+  max-height: 12px;
+  margin-right: 10px;
+}
+@media (max-width: 767px) {
+  .tire-service__content__container > .content > .banner .banner-list li > .image {
+    max-height: 15px;
+  }
+}
+.tire-service__content__container > .content > .banner .banner-list li > .image > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  vertical-align: text-top;
+}
+.tire-service__content__container > .content > .banner .banner-list li > p {
+  margin: 0;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 110%;
   color: #fff;
-  background-image: url(../img/page/tire-service/blue-chek.svg);
-  background-size: 13px 10.5px;
-  background-repeat: no-repeat;
-  background-position: top 3px left;
-  padding-left: 25px;
-  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .tire-service__content__container > .content > .banner .banner-list li > p br {
+    display: none;
+  }
+}
+@media (max-width: 1920px) {
+  .tire-service__content__container > .content > .banner .banner-list li > p {
+    font-size: 0.9375vw;
+  }
+}
+@media (max-width: 767px) {
+  .tire-service__content__container > .content > .banner .banner-list li > p {
+    font-size: 4.16vw;
+  }
 }
 @media (max-width: 1920px) {
   .tire-service__content__container > .content > .banner .banner-list li {
-    font-size: 0.9375vw;
-    background-size: 0.677vw 0.5469vw;
-    background-position: top 0.15625vw left;
-    padding-left: 1.302vw;
     margin-bottom: 0.52vw;
   }
 }
 @media (max-width: 767px) {
   .tire-service__content__container > .content > .banner .banner-list li {
-    font-size: 4.16vw;
-    background-size: 5vw 4vw;
-    background-position: top left;
-    padding-left: 7.77vw;
     margin-bottom: 4.1vw;
-    margin-right: 0 !important;
-  }
-  .tire-service__content__container > .content > .banner .banner-list li br {
-    display: none;
-  }
-}
-.tire-service__content__container > .content > .banner .banner-list li:nth-child(1) {
-  margin-right: 89px;
-}
-@media (max-width: 1920px) {
-  .tire-service__content__container > .content > .banner .banner-list li:nth-child(1) {
-    margin-right: 4.635vw;
-  }
-}
-.tire-service__content__container > .content > .banner .banner-list li:nth-child(2) {
-  margin-right: 13px;
-}
-@media (max-width: 1920px) {
-  .tire-service__content__container > .content > .banner .banner-list li:nth-child(2) {
-    margin-right: 0.677vw;
-  }
-}
-.tire-service__content__container > .content > .banner .banner-list li:nth-child(3) {
-  margin-right: 0px;
-}
-@media (max-width: 1920px) {
-  .tire-service__content__container > .content > .banner .banner-list li:nth-child(3) {
-    margin-right: 0px;
-  }
-}
-.tire-service__content__container > .content > .banner .banner-list li:nth-child(4) {
-  margin-right: 68px;
-}
-@media (max-width: 1920px) {
-  .tire-service__content__container > .content > .banner .banner-list li:nth-child(4) {
-    margin-right: 3.541vw;
-  }
-}
-.tire-service__content__container > .content > .banner .banner-list li:nth-child(5) {
-  margin-right: 30px;
-}
-@media (max-width: 1920px) {
-  .tire-service__content__container > .content > .banner .banner-list li:nth-child(5) {
-    margin-right: 1.5vw;
-  }
-}
-.tire-service__content__container > .content > .banner .banner-list li:nth-child(6) {
-  margin-right: 0px;
-}
-@media (max-width: 1920px) {
-  .tire-service__content__container > .content > .banner .banner-list li:nth-child(6) {
-    margin-right: 0px;
+    align-items: center;
+    max-width: 100%;
   }
 }
 .tire-service__content__container > .content > .banner .banner-form {
@@ -12814,6 +12815,8 @@ li {
   justify-content: space-between;
   width: 34%;
   padding-top: 20px;
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 1920px) {
   .tire-service__content__container > .content > .banner .banner-form {
@@ -12904,9 +12907,6 @@ li {
 @media (max-width: 767px) {
   .tire-service__content__container > .content > .banner {
     padding: 49.45vw 5.555% 11.1vw 5.555%;
-    background-image: url(../img/page/tire-service/main-banner-mobile.png);
-    background-size: 100vw 138.61vw;
-    background-position: top;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -13094,17 +13094,22 @@ li {
   width: 21px;
   height: 21px;
   margin-right: 5px;
-  background: url(../img/page/tire-service/metro-2.svg);
-  background-size: 21px 21px;
   display: inline-block;
   pointer-events: none;
+}
+.tire-service__content__container > .content > .map .adresses .metro-icon > .metro-1 {
+  display: none;
+  height: 100%;
+}
+.tire-service__content__container > .content > .map .adresses .metro-icon > .metro-2 {
+  display: flex;
+  height: 100%;
 }
 @media (max-width: 1920px) {
   .tire-service__content__container > .content > .map .adresses .metro-icon {
     width: 1.09vw;
     height: 1.09vw;
     margin-right: 0.26vw;
-    background-size: 1.09vw 1.09vw;
   }
 }
 .tire-service__content__container > .content > .map .adresses .active p {
@@ -13119,14 +13124,11 @@ li {
     border: 0.05vw solid #99CEE9;
   }
 }
-.tire-service__content__container > .content > .map .adresses .active .metro-icon {
-  background: url(../img/page/tire-service/metro-1.svg);
-  background-size: 21px 21px;
+.tire-service__content__container > .content > .map .adresses .active .metro-icon > .metro-1 {
+  display: flex;
 }
-@media (max-width: 1920px) {
-  .tire-service__content__container > .content > .map .adresses .active .metro-icon {
-    background-size: 1.09vw 1.09vw;
-  }
+.tire-service__content__container > .content > .map .adresses .active .metro-icon > .metro-2 {
+  display: none;
 }
 @media (max-width: 1920px) {
   .tire-service__content__container > .content > .map .adresses {
@@ -13714,6 +13716,9 @@ li {
 .tire-service__content__container > .content > .cost .deactive {
   display: none;
 }
+.tire-service__content__container > .content > .cost #select-1 {
+  position: relative;
+}
 .tire-service__content__container > .content > .cost #select-1 .select__toggle {
   display: flex;
   justify-content: space-between;
@@ -13740,25 +13745,6 @@ li {
     border-radius: 1.11vw;
     border: 0.27vw solid #DBE2E9;
     color: #1E9cbd;
-  }
-}
-.tire-service__content__container > .content > .cost #select-1 .select__toggle::after {
-  content: "";
-  width: 14px;
-  height: 7px;
-  flex-shrink: 0;
-  margin-left: 10px;
-  background-size: contain;
-  background-image: url(../img/page/tire-service/blue-arrow-down.svg);
-  background-repeat: no-repeat;
-}
-@media (max-width: 767px) {
-  .tire-service__content__container > .content > .cost #select-1 .select__toggle::after {
-    content: "";
-    height: 1.94vw;
-    width: 3.88vw;
-    object-fit: contain;
-    margin-left: 0;
   }
 }
 .tire-service__content__container > .content > .cost #select-1 .select__dropdown {
@@ -13793,21 +13779,6 @@ li {
     font-size: 5vw;
   }
 }
-.tire-service__content__container > .content > .cost #select-1 .select__option_selected::after {
-  content: "";
-  width: 10px;
-  height: 10px;
-  color: #0277bd;
-  background-size: cover;
-  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" height="100" width="100" class="svg-inline--fa fa-check fa-w-16" data-icon="check" data-prefix="fas" aria-hidden="true"%3E%3Cpath d="M33.964 85.547l-32.5-32.251a4.935 4.935 0 010-7.017l7.071-7.017a5.027 5.027 0 017.071 0L37.5 60.987l46.894-46.534a5.028 5.028 0 017.07 0l7.072 7.017a4.935 4.935 0 010 7.017l-57.5 57.06a5.027 5.027 0 01-7.072 0z" fill="%230277bd"/%3E%3C/svg%3E');
-}
-@media (max-width: 767px) {
-  .tire-service__content__container > .content > .cost #select-1 .select__option_selected::after {
-    content: "";
-    width: 2.77vw;
-    height: 2.77vw;
-  }
-}
 @media (max-width: 767px) {
   .tire-service__content__container > .content > .cost #select-1 .select__option_selected {
     background-color: #f9f9f9;
@@ -13815,14 +13786,6 @@ li {
     align-items: center;
     justify-content: space-between;
     color: #1E9cbd;
-  }
-}
-.tire-service__content__container > .content > .cost #select-1 .select_show .select__toggle::after {
-  transform: rotate(180deg);
-}
-@media (max-width: 767px) {
-  .tire-service__content__container > .content > .cost #select-1 .select_show .select__toggle::after {
-    transform: rotate(180deg);
   }
 }
 @media (max-width: 767px) {
@@ -13870,26 +13833,21 @@ li {
     height: 2.08vw !important;
   }
 }
-.tire-service__content__container > .content > .cost .select .select__toggle::after {
-  content: "";
-  width: 14px;
-  height: 7px;
-  flex-shrink: 0;
-  margin-left: 10px;
-  background-size: contain;
-  background-image: url(../img/page/tire-service/blue-arrow-down.svg);
-  background-repeat: no-repeat;
-}
-@media (max-width: 1920px) {
-  .tire-service__content__container > .content > .cost .select .select__toggle::after {
-    content: "";
-    width: 0.729vw;
-    height: 0.364vw;
-    margin-left: 0.52vw;
-  }
-}
 .tire-service__content__container > .content > .cost .select .select__toggle:focus {
   outline: none;
+}
+.tire-service__content__container > .content > .cost .select > .image {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  height: 14px;
+  display: flex;
+  transform: translateY(-50%);
+}
+.tire-service__content__container > .content > .cost .select > .image > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 .tire-service__content__container > .content > .cost .select .select__dropdown {
   display: none;
@@ -13920,6 +13878,20 @@ li {
   font-size: 17px;
   line-height: 140%;
   color: #444;
+  position: relative;
+}
+.tire-service__content__container > .content > .cost .select .select__options > .select__option > .image {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  height: 14px;
+  transform: translateY(-50%);
+  display: none;
+}
+.tire-service__content__container > .content > .cost .select .select__options > .select__option > .image > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 @media (max-width: 1920px) {
   .tire-service__content__container > .content > .cost .select .select__options > .select__option {
@@ -13928,34 +13900,22 @@ li {
     font-size: 0.88vw;
   }
 }
-.tire-service__content__container > .content > .cost .select .select__option_selected {
+.tire-service__content__container > .content > .cost .select .select__options > .select__option_selected {
   background-color: #f9f9f9;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.tire-service__content__container > .content > .cost .select .select__option_selected::after {
-  content: "";
-  width: 10px;
-  height: 10px;
-  color: #0277bd;
-  background-size: cover;
-  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" height="100" width="100" class="svg-inline--fa fa-check fa-w-16" data-icon="check" data-prefix="fas" aria-hidden="true"%3E%3Cpath d="M33.964 85.547l-32.5-32.251a4.935 4.935 0 010-7.017l7.071-7.017a5.027 5.027 0 017.071 0L37.5 60.987l46.894-46.534a5.028 5.028 0 017.07 0l7.072 7.017a4.935 4.935 0 010 7.017l-57.5 57.06a5.027 5.027 0 01-7.072 0z" fill="%230277bd"/%3E%3C/svg%3E');
-}
-@media (max-width: 1920px) {
-  .tire-service__content__container > .content > .cost .select .select__option_selected::after {
-    content: "";
-    width: 0.52vw;
-    height: 0.52vw;
-  }
+.tire-service__content__container > .content > .cost .select .select__options > .select__option_selected > .image {
+  display: flex;
 }
 .tire-service__content__container > .content > .cost .select .select__option:hover {
   background-color: #f9f9f9;
   cursor: pointer;
   transition: 0.3s background-color ease-in-out;
 }
-.tire-service__content__container > .content > .cost .select_show .select__toggle::after {
-  transform: rotate(180deg);
+.tire-service__content__container > .content > .cost .select_show > .image {
+  transform: translateY(-50%) rotate(180deg);
 }
 .tire-service__content__container > .content > .cost .select_show .select__dropdown {
   display: block;
@@ -13978,11 +13938,20 @@ li {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
   border-radius: 6px;
   padding: 65px 30px;
-  background-image: url(../img/page/tire-service/dispetcher.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 372px 280px;
   height: 280px;
+  position: relative;
+  overflow: hidden;
+}
+.tire-service__content__container > .content > .tirefitting-order > .image {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+.tire-service__content__container > .content > .tirefitting-order > .image > img {
+  height: 100%;
+  object-fit: cover;
 }
 .tire-service__content__container > .content > .tirefitting-order h2 {
   font-family: "Open Sans Condensed", "Roboto", sans-serif;
@@ -13992,6 +13961,8 @@ li {
   line-height: 100%;
   color: #444;
   margin: 0;
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 1920px) {
   .tire-service__content__container > .content > .tirefitting-order h2 {
@@ -14003,6 +13974,10 @@ li {
     font-size: 6.944vw;
   }
 }
+.tire-service__content__container > .content > .tirefitting-order form {
+  position: relative;
+  z-index: 1;
+}
 .tire-service__content__container > .content > .tirefitting-order form .select-row {
   display: flex;
   flex-direction: row;
@@ -14013,6 +13988,7 @@ li {
 .tire-service__content__container > .content > .tirefitting-order form .select-row .select {
   position: relative;
   width: 17.1%;
+  height: max-content;
 }
 .tire-service__content__container > .content > .tirefitting-order form .select-row .select .select__toggle {
   display: flex;
@@ -14041,23 +14017,18 @@ li {
     height: 2.08vw !important;
   }
 }
-.tire-service__content__container > .content > .tirefitting-order form .select-row .select .select__toggle::after {
-  content: "";
-  width: 14px;
+.tire-service__content__container > .content > .tirefitting-order form .select-row .select > .image {
+  position: absolute;
+  top: 50%;
+  right: 5%;
   height: 7px;
-  flex-shrink: 0;
-  margin-left: 10px;
-  background-size: contain;
-  background-image: url(../img/page/tire-service/blue-arrow-down.svg);
-  background-repeat: no-repeat;
+  display: flex;
+  transform: translateY(-50%);
 }
-@media (max-width: 1920px) {
-  .tire-service__content__container > .content > .tirefitting-order form .select-row .select .select__toggle::after {
-    content: "";
-    width: 0.729vw;
-    height: 0.364vw;
-    margin-left: 0.52vw;
-  }
+.tire-service__content__container > .content > .tirefitting-order form .select-row .select > .image > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 .tire-service__content__container > .content > .tirefitting-order form .select-row .select .select__toggle:focus {
   outline: none;
@@ -14086,13 +14057,27 @@ li {
 .tire-service__content__container > .content > .tirefitting-order form .select-row .select .select__options {
   margin: 0;
   list-style: none;
-  padding: 10px;
-  padding-right: 16.5px;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 140%;
   color: #444;
+}
+.tire-service__content__container > .content > .tirefitting-order form .select-row .select .select__options > .select__option {
+  position: relative;
+}
+.tire-service__content__container > .content > .tirefitting-order form .select-row .select .select__options > .select__option > .image {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  height: 7px;
+  transform: translateY(-50%);
+  display: none;
+}
+.tire-service__content__container > .content > .tirefitting-order form .select-row .select .select__options > .select__option > .image > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 @media (max-width: 1920px) {
   .tire-service__content__container > .content > .tirefitting-order form .select-row .select .select__options > .select__option {
@@ -14101,26 +14086,14 @@ li {
     font-size: 0.88vw;
   }
 }
-.tire-service__content__container > .content > .tirefitting-order form .select-row .select .select__option_selected {
+.tire-service__content__container > .content > .tirefitting-order form .select-row .select .select__options > .select__option_selected {
   background-color: #f9f9f9;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.tire-service__content__container > .content > .tirefitting-order form .select-row .select .select__option_selected::after {
-  content: "";
-  width: 10px;
-  height: 10px;
-  color: #0277bd;
-  background-size: cover;
-  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" height="100" width="100" class="svg-inline--fa fa-check fa-w-16" data-icon="check" data-prefix="fas" aria-hidden="true"%3E%3Cpath d="M33.964 85.547l-32.5-32.251a4.935 4.935 0 010-7.017l7.071-7.017a5.027 5.027 0 017.071 0L37.5 60.987l46.894-46.534a5.028 5.028 0 017.07 0l7.072 7.017a4.935 4.935 0 010 7.017l-57.5 57.06a5.027 5.027 0 01-7.072 0z" fill="%230277bd"/%3E%3C/svg%3E');
-}
-@media (max-width: 1920px) {
-  .tire-service__content__container > .content > .tirefitting-order form .select-row .select .select__option_selected::after {
-    content: "";
-    width: 0.52vw;
-    height: 0.52vw;
-  }
+.tire-service__content__container > .content > .tirefitting-order form .select-row .select .select__options > .select__option_selected > .image {
+  display: flex;
 }
 .tire-service__content__container > .content > .tirefitting-order form .select-row .select .select__option:hover {
   background-color: #f9f9f9;
@@ -14136,8 +14109,33 @@ li {
 .tire-service__content__container > .content > .tirefitting-order form .select-row .select_show .select__backdrop {
   display: block;
 }
-.tire-service__content__container > .content > .tirefitting-order form .select-row input[type=date], .tire-service__content__container > .content > .tirefitting-order form .select-row input[type=time] {
-  width: 17.1%;
+.tire-service__content__container > .content > .tirefitting-order form .select-row > .date, .tire-service__content__container > .content > .tirefitting-order form .select-row .appt {
+  position: relative;
+  width: 20%;
+}
+.tire-service__content__container > .content > .tirefitting-order form .select-row > .date:hover > .image > .blue-arrow, .tire-service__content__container > .content > .tirefitting-order form .select-row .appt:hover > .image > .blue-arrow {
+  display: flex;
+}
+.tire-service__content__container > .content > .tirefitting-order form .select-row > .date:hover > .image > .gray-arrow, .tire-service__content__container > .content > .tirefitting-order form .select-row .appt:hover > .image > .gray-arrow {
+  display: none;
+}
+.tire-service__content__container > .content > .tirefitting-order form .select-row > .date > .image, .tire-service__content__container > .content > .tirefitting-order form .select-row .appt > .image {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  height: 7px;
+  display: flex;
+  transform: translateY(-50%);
+}
+.tire-service__content__container > .content > .tirefitting-order form .select-row > .date > .image > img, .tire-service__content__container > .content > .tirefitting-order form .select-row .appt > .image > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.tire-service__content__container > .content > .tirefitting-order form .select-row > .date > .image > .blue-arrow, .tire-service__content__container > .content > .tirefitting-order form .select-row .appt > .image > .blue-arrow {
+  display: none;
+}
+.tire-service__content__container > .content > .tirefitting-order form .select-row > .date input[type=date], .tire-service__content__container > .content > .tirefitting-order form .select-row > .date input[type=time], .tire-service__content__container > .content > .tirefitting-order form .select-row .appt input[type=date], .tire-service__content__container > .content > .tirefitting-order form .select-row .appt input[type=time] {
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -14152,9 +14150,10 @@ li {
   cursor: pointer;
   align-items: center;
   transition: 0.3s;
+  width: 100%;
 }
 @media (max-width: 1920px) {
-  .tire-service__content__container > .content > .tirefitting-order form .select-row input[type=date], .tire-service__content__container > .content > .tirefitting-order form .select-row input[type=time] {
+  .tire-service__content__container > .content > .tirefitting-order form .select-row > .date input[type=date], .tire-service__content__container > .content > .tirefitting-order form .select-row > .date input[type=time], .tire-service__content__container > .content > .tirefitting-order form .select-row .appt input[type=date], .tire-service__content__container > .content > .tirefitting-order form .select-row .appt input[type=time] {
     font-size: 0.885vw;
     height: 2.08vw !important;
     padding: 0 0.859375vw 0 0.52vw;
@@ -14162,44 +14161,38 @@ li {
     border-radius: 0.2vw;
   }
 }
-.tire-service__content__container > .content > .tirefitting-order form .select-row input[type=date]::-webkit-calendar-picker-indicator, .tire-service__content__container > .content > .tirefitting-order form .select-row input[type=time]::-webkit-calendar-picker-indicator {
+.tire-service__content__container > .content > .tirefitting-order form .select-row > .date input[type=date]::-webkit-calendar-picker-indicator, .tire-service__content__container > .content > .tirefitting-order form .select-row > .date input[type=time]::-webkit-calendar-picker-indicator, .tire-service__content__container > .content > .tirefitting-order form .select-row .appt input[type=date]::-webkit-calendar-picker-indicator, .tire-service__content__container > .content > .tirefitting-order form .select-row .appt input[type=time]::-webkit-calendar-picker-indicator {
   color: transparent;
-  opacity: 1;
-  background: url(../img/page/tire-service/gray-arrow-down.svg) no-repeat right;
-  background-size: 14px 7px;
+  opacity: 0;
   width: 14px;
 }
 @media (max-width: 1920px) {
-  .tire-service__content__container > .content > .tirefitting-order form .select-row input[type=date]::-webkit-calendar-picker-indicator, .tire-service__content__container > .content > .tirefitting-order form .select-row input[type=time]::-webkit-calendar-picker-indicator {
+  .tire-service__content__container > .content > .tirefitting-order form .select-row > .date input[type=date]::-webkit-calendar-picker-indicator, .tire-service__content__container > .content > .tirefitting-order form .select-row > .date input[type=time]::-webkit-calendar-picker-indicator, .tire-service__content__container > .content > .tirefitting-order form .select-row .appt input[type=date]::-webkit-calendar-picker-indicator, .tire-service__content__container > .content > .tirefitting-order form .select-row .appt input[type=time]::-webkit-calendar-picker-indicator {
     background-size: 0.729vw 0.364vw;
     width: 0.729vw;
   }
 }
-.tire-service__content__container > .content > .tirefitting-order form .select-row input[type=date]::-webkit-calendar-picker-indicator:hover, .tire-service__content__container > .content > .tirefitting-order form .select-row input[type=time]::-webkit-calendar-picker-indicator:hover {
+.tire-service__content__container > .content > .tirefitting-order form .select-row > .date input[type=date]::-webkit-calendar-picker-indicator:hover, .tire-service__content__container > .content > .tirefitting-order form .select-row > .date input[type=time]::-webkit-calendar-picker-indicator:hover, .tire-service__content__container > .content > .tirefitting-order form .select-row .appt input[type=date]::-webkit-calendar-picker-indicator:hover, .tire-service__content__container > .content > .tirefitting-order form .select-row .appt input[type=time]::-webkit-calendar-picker-indicator:hover {
   cursor: pointer;
 }
-.tire-service__content__container > .content > .tirefitting-order form .select-row input[type=date]:hover, .tire-service__content__container > .content > .tirefitting-order form .select-row input[type=time]:hover {
+.tire-service__content__container > .content > .tirefitting-order form .select-row > .date input[type=date]:hover, .tire-service__content__container > .content > .tirefitting-order form .select-row > .date input[type=time]:hover, .tire-service__content__container > .content > .tirefitting-order form .select-row .appt input[type=date]:hover, .tire-service__content__container > .content > .tirefitting-order form .select-row .appt input[type=time]:hover {
   cursor: pointer !important;
 }
-.tire-service__content__container > .content > .tirefitting-order form .select-row input[type=date]:focus::-webkit-calendar-picker-indicator, .tire-service__content__container > .content > .tirefitting-order form .select-row input[type=time]:focus::-webkit-calendar-picker-indicator {
+.tire-service__content__container > .content > .tirefitting-order form .select-row > .date input[type=date]:focus::-webkit-calendar-picker-indicator, .tire-service__content__container > .content > .tirefitting-order form .select-row > .date input[type=time]:focus::-webkit-calendar-picker-indicator, .tire-service__content__container > .content > .tirefitting-order form .select-row .appt input[type=date]:focus::-webkit-calendar-picker-indicator, .tire-service__content__container > .content > .tirefitting-order form .select-row .appt input[type=time]:focus::-webkit-calendar-picker-indicator {
   transform: rotate(180deg);
-  background-position: left center;
-  background: url(../img/page/tire-service/blue-arrow-down.svg) no-repeat left;
   width: 14px;
-  background-size: 14px 7px;
 }
 @media (max-width: 1920px) {
-  .tire-service__content__container > .content > .tirefitting-order form .select-row input[type=date]:focus::-webkit-calendar-picker-indicator, .tire-service__content__container > .content > .tirefitting-order form .select-row input[type=time]:focus::-webkit-calendar-picker-indicator {
+  .tire-service__content__container > .content > .tirefitting-order form .select-row > .date input[type=date]:focus::-webkit-calendar-picker-indicator, .tire-service__content__container > .content > .tirefitting-order form .select-row > .date input[type=time]:focus::-webkit-calendar-picker-indicator, .tire-service__content__container > .content > .tirefitting-order form .select-row .appt input[type=date]:focus::-webkit-calendar-picker-indicator, .tire-service__content__container > .content > .tirefitting-order form .select-row .appt input[type=time]:focus::-webkit-calendar-picker-indicator {
     width: 0.729vw;
-    background-size: 0.729vw 0.364vw;
   }
 }
-.tire-service__content__container > .content > .tirefitting-order form .select-row input[type=date]:focus, .tire-service__content__container > .content > .tirefitting-order form .select-row input[type=time]:focus, .tire-service__content__container > .content > .tirefitting-order form .select-row .select__toggle:focus {
+.tire-service__content__container > .content > .tirefitting-order form .select-row > .date input[type=date]:focus, .tire-service__content__container > .content > .tirefitting-order form .select-row > .date input[type=time]:focus, .tire-service__content__container > .content > .tirefitting-order form .select-row > .date .select__toggle:focus, .tire-service__content__container > .content > .tirefitting-order form .select-row .appt input[type=date]:focus, .tire-service__content__container > .content > .tirefitting-order form .select-row .appt input[type=time]:focus, .tire-service__content__container > .content > .tirefitting-order form .select-row .appt .select__toggle:focus {
   color: #444;
   border: 1px solid #444;
 }
 @media (max-width: 1920px) {
-  .tire-service__content__container > .content > .tirefitting-order form .select-row input[type=date]:focus, .tire-service__content__container > .content > .tirefitting-order form .select-row input[type=time]:focus, .tire-service__content__container > .content > .tirefitting-order form .select-row .select__toggle:focus {
+  .tire-service__content__container > .content > .tirefitting-order form .select-row > .date input[type=date]:focus, .tire-service__content__container > .content > .tirefitting-order form .select-row > .date input[type=time]:focus, .tire-service__content__container > .content > .tirefitting-order form .select-row > .date .select__toggle:focus, .tire-service__content__container > .content > .tirefitting-order form .select-row .appt input[type=date]:focus, .tire-service__content__container > .content > .tirefitting-order form .select-row .appt input[type=time]:focus, .tire-service__content__container > .content > .tirefitting-order form .select-row .appt .select__toggle:focus {
     border: 0.05vw solid #444;
   }
 }
