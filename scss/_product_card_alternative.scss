@@ -129,7 +129,6 @@
               font-style: normal;
               font-weight: 700;
               font-size: 18px;
-              color: $cPastelGreen;
               text-transform: uppercase;
             }
 
@@ -213,7 +212,15 @@
             }
           }
 
-          .vew_btn {
+          > .available {
+            color: $cPastelGreen;
+          }
+
+          > .not-available {
+            color: $cCoralRed;
+          }
+
+          .view-btn {
             width: 10%;
             font-family: $font-open-sans;
             font-style: normal;
@@ -224,6 +231,16 @@
             padding: 10px 5px;
             color: $cCerulean;
             text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 280ms;
+
+            &:hover {
+              color: $cWhite;
+              background: $cTurquoise;
+              border-color: $cTurquoise;
+            }
           }
         }
       }
@@ -396,12 +413,12 @@
               max-height: 50px;
               width: 100%;
               max-width: 100px;
-              //margin-right: 6px;
+              margin: 0 10px 0 0;
 
               > img {
                 height: 100%;
                 width: 100%;
-                object-fit: cover;
+                object-fit: contain;
               }
             }
 
@@ -869,12 +886,13 @@
     .alternative_product_cont {
       .alternative_product_title {
         h2 {
-          font-size: 28px;
+          font-size: 32px;
           margin-bottom: 30px;
         }
 
         .txt {
-          font-size: 18px;
+          font-size: 21px;
+          padding: 20px 0;
 
           span {
             margin: 0 3px;
@@ -1146,7 +1164,7 @@
 
             }
 
-            .vew_btn {
+            .view-btn {
               width: 12%;
               font-size: 18px;
               padding: 10px 5px;
@@ -1407,7 +1425,7 @@
 
             }
 
-            .vew_btn {
+            .view-btn {
               display: none;
             }
           }
@@ -1770,7 +1788,7 @@
 
           > .product {
             > .item {
-              > .product_title {
+              > .product-title {
                 font-size: clamp(8px, 1.5vw, 16px);
               }
 
