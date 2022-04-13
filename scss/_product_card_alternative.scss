@@ -53,25 +53,38 @@
           &:nth-child(1) {
             width: 10%;
             min-width: 50px;
+
+            @media(max-width: $md4 + px) {
+              display: none;
+            }
           }
 
           &:nth-child(2) {
             width: 10%;
             min-width: 50px;
+
+            @media(max-width: $md4 + px) {
+              display: none;
+            }
           }
 
           &:nth-child(3) {
-            width: 30%;
             flex-grow: 1;
           }
 
           &:nth-child(4) {
             width: 15%;
             min-width: 70px;
+
+            @media(max-width: $md3 + px) {
+              display: none;
+            }
+
           }
 
           &:nth-child(5) {
             width: 10%;
+            min-width: 75px;
           }
 
           &:nth-child(6) {
@@ -91,7 +104,7 @@
           align-items: center;
           padding: 10px 0;
 
-          span {
+          > span {
             font-size: 16px;
             font-family: $font-roboto;
             font-style: normal;
@@ -102,24 +115,19 @@
               width: 10%;
               min-width: 50px;
               font-weight: 700;
+
+              @media(max-width: $md4 + px) {
+                display: none;
+              }
             }
 
             &:nth-child(2) {
               width: 10%;
               min-width: 50px;
               color: $cCerulean;
-            }
 
-            &:nth-child(3) {
-              width: 30%;
-              color: $cCerulean;
-              font-weight: 700;
-              flex-grow: 1;
-
-              img {
-                margin-right: 5px;
-                height: 100%;
-                max-height: 50px;
+              @media(max-width: $md4 + px) {
+                display: none;
               }
             }
 
@@ -130,6 +138,8 @@
               font-weight: 700;
               font-size: 18px;
               text-transform: uppercase;
+              white-space: nowrap;
+              min-width: 75px;
             }
 
             &:nth-child(6) {
@@ -144,6 +154,26 @@
 
           }
 
+          > .product-title {
+            width: 30%;
+            color: $cCerulean;
+            font-weight: 700;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            padding: 0 10px 0 0;
+
+            @media(max-width: $md3 + px) {
+              font-size: clamp(10px, 2vw, 16px);
+            }
+
+            img {
+              margin-right: 5px;
+              height: 100%;
+              max-height: 50px;
+            }
+          }
+
           > .season {
             width: 15%;
             min-width: 70px;
@@ -151,6 +181,10 @@
 
             @media(max-width: $md1 + px) {
               width: 10%;
+            }
+
+            @media(max-width: $md3 + px) {
+              display: none;
             }
 
             > .leto {
@@ -220,7 +254,7 @@
             color: $cCoralRed;
           }
 
-          .view-btn {
+          > .view-btn {
             width: 10%;
             font-family: $font-open-sans;
             font-style: normal;
@@ -489,10 +523,8 @@
             }
 
             .top-btn {
-              //max-width: 100px;
-              //width: 100%;
               width: 85px;
-              display: flex;
+              display: none;
               flex-wrap: nowrap;
               justify-content: space-between;
               align-items: center;
@@ -604,9 +636,9 @@
 
             .types {
               width: 100%;
-              max-width: 280px;
+              //max-width: 280px;
               display: flex;
-              justify-content: space-between;
+              justify-content: flex-start;
               align-items: center;
 
               p {
@@ -618,9 +650,20 @@
                 color: $cCerulean;
                 border-bottom: 1px dashed $cIron;
                 transition: 280ms;
+                margin: 0 40px 1rem 0;
+                white-space: nowrap;
 
                 &:hover {
                   border-bottom: 1px solid $cCerulean;
+                }
+
+                @media(max-width: $md3 + px) {
+                  margin: 0 20px 1rem 0;
+                }
+
+                @media(max-width: $md4 + px) {
+                  margin: 0 10px 1rem 0;
+                  font-size: clamp(10px, 3.5vw, 18px);
                 }
               }
             }
@@ -979,7 +1022,7 @@
               }
 
               .types {
-                max-width: 352px;
+                //max-width: 352px;
 
                 p {
                   font-size: 16px;
@@ -1090,10 +1133,8 @@
 
         .about {
           padding: 24px 0;
-          //min-width: 958px;
 
           span {
-            //font-size: 16px;
 
             &:nth-child(1) {
               width: 10%;
@@ -1101,11 +1142,6 @@
 
             &:nth-child(2) {
               width: 10%;
-            }
-
-            &:nth-child(3) {
-              width: 30%;
-              flex-grow: 1;
             }
 
             &:nth-child(4) {
@@ -1137,11 +1173,6 @@
 
               &:nth-child(2) {
                 width: 10%;
-              }
-
-              &:nth-child(3) {
-                width: 30%;
-                flex-grow: 1;
               }
 
               &:nth-child(4) {
@@ -1276,7 +1307,7 @@
               }
 
               .types {
-                max-width: 352px;
+                //max-width: 352px;
 
                 p {
                   font-size: 16px;
@@ -1364,11 +1395,6 @@
               width: 10%;
             }
 
-            &:nth-child(3) {
-              width: 30%;
-              flex-grow: 1;
-            }
-
             &:nth-child(4) {
               width: 10%;
             }
@@ -1398,11 +1424,6 @@
 
               &:nth-child(2) {
                 width: 10%;
-              }
-
-              &:nth-child(3) {
-                width: 30%;
-                flex-grow: 1;
               }
 
               &:nth-child(4) {
@@ -1540,7 +1561,7 @@
               }
 
               .types {
-                max-width: 352px;
+                //max-width: 352px;
 
                 p {
                   font-size: 16px;
@@ -1610,36 +1631,6 @@
                   max-width: 168px;
                   height: 52px;
                 }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  .alternative_tab {
-    .alternative-block {
-      .alternative-content {
-        .about {
-
-          span {
-
-            &:nth-child(5) {
-              display: none;
-            }
-
-          }
-        }
-
-        .product {
-
-          .item {
-
-
-            span {
-
-              &:nth-child(5) {
-                display: none;
               }
             }
           }
@@ -1748,7 +1739,7 @@
               }
 
               .types {
-                max-width: 352px;
+                //max-width: 352px;
 
                 p {
                   font-size: 16px;
@@ -1789,7 +1780,7 @@
           > .product {
             > .item {
               > .product-title {
-                font-size: clamp(8px, 1.5vw, 16px);
+                font-size: clamp(10px, 1.5vw, 16px);
               }
 
               > .season {
