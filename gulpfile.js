@@ -10,6 +10,7 @@ require('dotenv').config();
 const sourceDir = './scss';
 const env = process.env.NODE_ENV;
 const stylePath = './site/assets/template_vlad/css';
+const staticPath = process.env.STATIC_PATH + '/site/assets/css';
 const minStylePath = process.env.STYLE_MIN_PATH ? process.env.STYLE_MIN_PATH : './site/assets/template_vlad/css';
 
 
@@ -29,13 +30,16 @@ gulp.task('minify', () => {
     }))
     .pipe(gulp.dest(sourceDir))
     .pipe(gulp.dest(minStylePath))
+    .pipe(gulp.dest(staticPath))
   ;
 });
 
 
 gulp.task('copy-style', () => {
   return gulp.src(sourceDir + '/style.css')
-    .pipe(gulp.dest(stylePath));
+    .pipe(gulp.dest(stylePath))
+    .pipe(gulp.dest(staticPath))
+  ;
 });
 
 
