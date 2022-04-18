@@ -151,6 +151,18 @@
           color: $color-accent;
         }
       }
+
+      &-offer-total-count {
+        height: 2.4em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: $font-roboto;
+        font-size: 13px;
+        line-height: 1.2em;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $color-accent;
+      }
     }
 
     &__vendor-logo {
