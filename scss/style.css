@@ -16308,9 +16308,16 @@ li {
   letter-spacing: -0.01em;
   color: #444444;
 }
-.about_content .about_content_cont .about_items .item svg {
+.about_content .about_content_cont .about_items .item > .item-image {
   margin-right: 10px;
   min-width: 32px;
+  width: 32px;
+  height: 32px;
+}
+.about_content .about_content_cont .about_items .item > .item-image > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 .about_content .about_content_cont .about_grid {
   width: 100%;
