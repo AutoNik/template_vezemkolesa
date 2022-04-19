@@ -1,3 +1,5 @@
+@import "vars";
+
 .about_main {
   width: 100%;
   padding: 20px 0;
@@ -209,6 +211,78 @@
 
           &:last-child {
             margin-bottom: 0;
+          }
+        }
+
+        > .app-links {
+          display: flex;
+          @media(max-width: $md4 + px) {
+            flex-direction: column;
+          }
+
+          > .avtoapp {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media(max-width: $md4 + px) {
+              width: 100%;
+            }
+
+            > .avtoapp-logo {
+              width: 100%;
+              justify-content: center;
+              > img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+              }
+            }
+            > .appstore-logo {
+              width: 100%;
+              justify-content: center;
+              > a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                > img {
+                  height: 100%;
+                  width: 100%;
+                  object-fit: contain;
+                }
+              }
+            }
+            > .googleplay-logo {
+              width: 100%;
+              justify-content: center;
+              > a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                > img {
+                  height: 100%;
+                  width: 100%;
+                  object-fit: contain;
+                }
+              }
+            }
+          }
+          > .qr-code {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media(max-width: $md4 + px) {
+              width: 100%;
+            }
+            > img {
+              height: 90%;
+              width: 90%;
+              object-fit: contain;
+            }
           }
         }
       }
