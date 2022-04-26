@@ -417,6 +417,22 @@
             font-size: 30px;
         }
     }
+
+    &__title-model {
+        > a {
+            font-weight: bold;
+            font-size: 24px;
+            font-family: $font-open-sans;
+            line-height: 100%;
+            color: $cCerulean;
+            border-bottom: 1px dashed $cCerulean;
+
+            &:hover {
+                color: $cCerulean;
+                border-bottom: 1px solid $cCerulean;
+            }
+        }
+    }
 }
 
 /* delivery-line */

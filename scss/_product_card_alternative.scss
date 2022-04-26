@@ -651,6 +651,17 @@
                   margin: 0 10px 1rem 0;
                   font-size: clamp(10px, 3.5vw, 18px);
                 }
+
+                > .model-link {
+                  font-family: $font-roboto;
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 18px;
+                  line-height: 120%;
+                  color: $cCerulean;
+                  text-decoration: none;
+                }
+
               }
             }
           }

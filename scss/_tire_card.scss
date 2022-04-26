@@ -5,6 +5,19 @@
     > .product-details__top {
       > .product-details__top-content {
         > .product-hero {
+          > .product-hero__gallery {
+            > .product-gallery__swiper {
+              > .swiper-wrapper {
+                height: 100%;
+                justify-content: center;
+              }
+            }
+            > .product-gallery__thumbs {
+              > .swiper-wrapper {
+                justify-content: center;
+              }
+            }
+          }
           > .product-hero__content {
             > .slider_top_flex {
               display: flex;
