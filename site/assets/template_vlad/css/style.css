@@ -11834,6 +11834,30 @@ li {
   color: #fff;
   background-color: #0E8ECF;
   border-radius: 4px;
+  transition: 280ms;
+}
+.catalog__filter__control__submit__button:hover {
+  transform: scale(1.05);
+}
+
+.catalog__filter__control__reset__button__container {
+  width: 100%;
+  padding: 10px 10px 0 10px;
+  text-align: center;
+}
+@media screen and (min-width: 1025px) {
+  .catalog__filter__control__reset__button__container {
+    padding-top: 15px;
+    width: 200px;
+  }
+}
+
+.catalog__filter__control__reset__button {
+  border-bottom: 1px dashed #0E8ECF;
+  transition: 280ms;
+}
+.catalog__filter__control__reset__button:hover {
+  border-bottom: 1px solid #0E8ECF;
 }
 
 .catalog__filter__control__set__item {
