@@ -1,8 +1,8 @@
-//@import "forms";
 @import "vars";
 
 .calculator_page {
   width: 100%;
+  padding: 20px 0;
 
   .calculator_cont {
     margin: 0 auto;
@@ -73,6 +73,15 @@
             padding: 20px 0;
           }
 
+          .calculator_block_top-text_title {
+            font-family: $font-open-sans;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            color: $cTundora;
+            margin: 0 0 10px 0;
+          }
+
           .calculator_block_top-text_description {
             font-family: $font-roboto;
             font-style: normal;
@@ -88,7 +97,6 @@
           background: $cAlabaster;
           padding: 20px 40px;
           display: flex;
-          justify-content: space-between;
           align-items: end;
           gap: 20px;
 
@@ -102,7 +110,6 @@
             display: flex;
             flex-grow: 1;
             gap: 20px;
-            //flex-wrap: wrap;
 
             @media(max-width: $md3 - 1 + px) {
               width: 100%;
@@ -120,10 +127,6 @@
               @media(max-width: $md4 - 1 + px) {
                 width: 100%;
               }
-
-              //@media(max-width: $md4 - 1 + px) {
-              //  width: 100%;
-              //}
 
               .selects_item_name {
                 font-family: $font-open-sans;
@@ -207,6 +210,10 @@
 
             &:hover {
               transform: scale(1.1);
+
+              @media(max-width: $md4 - 1 + px) {
+                transform: scale(1);
+              }
             }
 
             @media(max-width: $md4 - 1 + px) {
@@ -217,13 +224,13 @@
 
         }
 
-        .calculator_block_selects2 {
-          background-color: #8c8c8c;
-        }
-
         .calculator_block_info {
           width: 100%;
-          padding: 0 40px;
+          padding: 20px 40px;
+
+          @media(max-width: $md3 - 1 + px) {
+            padding: 20px 0;
+          }
 
           .info_table {
             width: 100%;
@@ -231,6 +238,10 @@
             justify-content: space-between;
             align-items: flex-start;
             gap: 10px;
+
+            @media(max-width: $md3 - 1 + px) {
+              justify-content: center;
+            }
 
             .table {
               max-width: 980px;
@@ -248,15 +259,15 @@
                   max-width: 212px;
                   text-align: center;
                   width: 100%;
-                  font-family: 'Open Sans Condensed';
+                  font-family: $font-open-sans;
                   font-style: normal;
                   font-weight: 700;
                   font-size: 18px;
-                  line-height: 120%;
-                  color: #1E9CDB;
+                  color: $cCerulean;
 
                   &:first-child {
                     max-width: 250px;
+                    min-width: 100px;
                     text-align: left;
                   }
                 }
@@ -275,23 +286,56 @@
                 }
 
                 .table_tr_name {
-                  font-family: 'Inter';
+                  font-family: $font-roboto;
                   font-style: normal;
                   font-weight: 400;
                   font-size: 16px;
-                  line-height: 110%;
-                  color: #444444;
+                  color: $cTundora;
                   max-width: 212px;
                   text-align: center;
                   width: 100%;
 
                   &:first-child {
                     max-width: 250px;
+                    min-width: 100px;
                     text-align: left;
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
                     gap: 10px;
+                  }
+
+                  .table_tr_name-image {
+                    height: 21px;
+                    width: 21px;
+                    min-width: 21px;
+                    color: $cWhite;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: $font-roboto;
+                    font-weight: 900;
+                    font-style: normal;
+                    text-transform: uppercase;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    line-height: 17px;
+                  }
+
+                  .image-a {
+                    background-color: red;
+                  }
+
+                  .image-b {
+                    background-color: darkblue;
+                  }
+
+                  .image-c {
+                    background-color: green;
+                  }
+
+                  .image-d {
+                    background-color: #d27a29;
                   }
                 }
               }
@@ -300,6 +344,10 @@
             .info_table_img {
               max-width: 334px;
               width: 100%;
+
+              @media(max-width: $md4 - 1 + px) {
+                max-width: 100%;
+              }
 
               img {
                 width: 100%;
@@ -313,7 +361,7 @@
           max-width: 980px;
           padding: 0 40px;
 
-          .bottomcalc {
+          .bottom_calc {
             width: 100%;
 
             .calc {
@@ -324,19 +372,24 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-start;
+                gap: 20px;
+
+                @media(max-width: $md3 - 1 + px) {
+                  flex-direction: column;
+                  align-items: center;
+                }
 
                 .calc_top_left {
                   max-width: 460px;
                   width: 100%;
 
                   .calc_top_left_name {
-                    font-family: 'Open Sans Condensed';
+                    font-family: $font-open-sans;
                     font-style: normal;
                     font-weight: 700;
                     font-size: 18px;
-                    line-height: 120%;
                     margin-bottom: 20px;
-                    color: #949DA7;
+                    color: $cRegentGray;
                   }
 
                   .calc_top_flex {
@@ -347,23 +400,419 @@
                     gap: 10px;
                     margin-bottom: 10px;
 
+                    @media(max-width: $md4 - 1 + px) {
+                      flex-direction: column;
+                      align-items: center;
+                    }
+
                     .calc_top_item {
                       max-width: 210px;
                       width: 100%;
 
                       .calc_top_item_text {
-                        font-family: 'Open Sans Condensed';
+                        font-family: $font-open-sans;
                         font-style: normal;
                         font-weight: 700;
                         font-size: 18px;
-                        line-height: 120%;
                         display: flex;
                         margin-bottom: 10px;
-                        color: #444444;
+                        color: $cTundora;
                       }
 
-                      img {
-                        width: 100%;
+                      .calc_top_item_image {
+                        min-width: 210px;
+                        display: flex;
+                        position: relative;
+
+                        > img {
+                          width: 100%;
+                        }
+
+                        > .speed-numbers {
+                          position: absolute;
+                          display: flex;
+                          height: 50px;
+                          width: 120px;
+                          top: 11px;
+                          left: 40px;
+
+                          > .units {
+                            height: 100%;
+                            width: 37px;
+                            min-width: 37px;
+                            position: relative;
+
+                            > div {
+                              position: absolute;
+                              top: 0;
+                              right: 0;
+                              height: 100%;
+                              display: none;
+                              > img {
+                                height: 100%;
+                                object-fit: contain;
+                              }
+                            }
+
+                            > .empty {
+                              display: flex;
+                            }
+                          }
+
+                          > .decades {
+                            height: 100%;
+                            width: 37px;
+                            min-width: 37px;
+                            position: relative;
+
+                            > div {
+                              position: absolute;
+                              top: 0;
+                              right: 0;
+                              height: 100%;
+                              display: none;
+                              > img {
+                                height: 100%;
+                                object-fit: contain;
+                              }
+                            }
+
+                            > .empty {
+                              display: flex;
+                            }
+                          }
+
+                          > .hundreds {
+                            height: 100%;
+                            width: 37px;
+                            min-width: 37px;
+                            position: relative;
+
+                            > div {
+                              position: absolute;
+                              top: 0;
+                              right: 0;
+                              height: 100%;
+                              display: none;
+                              > img {
+                                height: 100%;
+                                object-fit: contain;
+                              }
+                            }
+
+                            > .empty {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .units-zero {
+                          .units {
+                            > .zero {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .units-one {
+                          .units {
+                            > .one {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .units-two {
+                          .units {
+                            > .two {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .units-three {
+                          .units {
+                            > .three {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .units-four {
+                          .units {
+                            > .four {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .units-five {
+                          .units {
+                            > .five {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .units-six {
+                          .units {
+                            > .six {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .units-seven {
+                          .units {
+                            > .seven {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .units-eight {
+                          .units {
+                            > .eight {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .units-nine {
+                          .units {
+                            > .nine {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .decades-zero {
+                          .decades {
+                            > .zero {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .decades-one {
+                          .decades {
+                            > .one {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .decades-two {
+                          .decades {
+                            > .two {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .decades-three {
+                          .decades {
+                            > .three {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .decades-four {
+                          .decades {
+                            > .four {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .decades-five {
+                          .decades {
+                            > .five {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .decades-six {
+                          .decades {
+                            > .six {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .decades-seven {
+                          .decades {
+                            > .seven {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .decades-eight {
+                          .decades {
+                            > .eight {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .decades-nine {
+                          .decades {
+                            > .nine {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .hundreds-zero {
+                          .hundreds {
+                            > .zero {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .hundreds-one {
+                          .hundreds {
+                            > .one {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .hundreds-two {
+                          .hundreds {
+                            > .two {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .hundreds-three {
+                          .hundreds {
+                            > .three {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .hundreds-four {
+                          .hundreds {
+                            > .four {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .hundreds-five {
+                          .hundreds {
+                            > .five {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .hundreds-six {
+                          .hundreds {
+                            > .six {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .hundreds-seven {
+                          .hundreds {
+                            > .seven {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .hundreds-eight {
+                          .hundreds {
+                            > .eight {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        .hundreds-nine {
+                          .hundreds {
+                            > .nine {
+                              display: flex;
+                            }
+                          }
+                        }
+
+                        > .speed-label {
+                          height: 12px;
+                          position: absolute;
+                          right: 15px;
+                          bottom: 25px;
+                          display: flex;
+                          > img {
+                            height: 100%;
+                            object-fit: contain;
+                          }
+                        }
+
+                        > .speed-scale {
+                          position: absolute;
+                          height: 8px;
+                          width: 182px;
+                          bottom: 10px;
+                          left: 50%;
+                          transform: translateX(-50%);
+                          overflow: hidden;
+
+                          > .speed-scale-empty {
+                            height: 100%;
+                            display: flex;
+                            justify-content: flex-start;
+
+                            > div {
+                              height: 100%;
+                              display: flex;
+                              width: 5px;
+                              min-width: 5px;
+                              margin: 0 1px;
+
+                              > img {
+                                height: 100%;
+                                width: 100%;
+                                object-fit: contain;
+                              }
+                            }
+                          }
+
+                          > .speed-scale-fill {
+                            height: 100%;
+                            display: flex;
+                            justify-content: flex-start;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            overflow: hidden;
+
+                            > div {
+                              height: 100%;
+                              display: flex;
+                              width: 5px;
+                              min-width: 5px;
+                              margin: 0 1px;
+
+                              > img {
+                                height: 100%;
+                                width: 100%;
+                                object-fit: contain;
+                              }
+                            }
+                          }
+
+
+                        }
                       }
                     }
                   }
@@ -376,14 +825,18 @@
                       width: 100%;
                       justify-content: space-between;
                       align-items: center;
-                      font-family: 'Inter';
+                      font-family: $font-roboto;
                       font-style: normal;
                       font-weight: 400;
                       font-size: 16px;
-                      line-height: 110%;
                       display: flex;
                       margin-bottom: 10px;
-                      color: #444444;
+                      color: $cTundora;
+
+                      @media(max-width: $md4 - 1 + px) {
+                        display: flex;
+                        justify-content: space-between;
+                      }
 
                       &:last-child {
                         margin-bottom: 0;
@@ -394,6 +847,10 @@
                         text-align: center;
                         display: block;
                         width: 100%;
+
+                        @media(max-width: $md4 - 1 + px) {
+                          max-width: 90px;
+                        }
                       }
                     }
                   }
@@ -404,12 +861,11 @@
                   width: 100%;
 
                   .calc_top_right_name {
-                    font-family: 'Open Sans Condensed';
+                    font-family: $font-open-sans;
                     font-style: normal;
                     font-weight: 700;
                     font-size: 18px;
-                    line-height: 120%;
-                    color: #949DA7;
+                    color: $cRegentGray;
                     margin-bottom: 20px;
                   }
 
@@ -417,19 +873,27 @@
                     width: 100%;
                     justify-content: space-between;
                     align-items: center;
-                    font-family: 'Inter';
+                    font-family: $font-roboto;
                     display: flex;
                     font-style: normal;
                     font-weight: 400;
                     font-size: 16px;
-                    line-height: 110%;
-                    color: #444444;
+                    color: $cTundora;
+
+                    @media(max-width: $md4 - 1 + px) {
+                      display: flex;
+                      justify-content: space-between;
+                    }
 
                     span {
                       max-width: 185px;
                       text-align: center;
                       display: block;
                       width: 100%;
+
+                      @media(max-width: $md4 - 1 + px) {
+                        max-width: 90px;
+                      }
                     }
                   }
                 }
@@ -443,98 +907,101 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-          gap: 10px;
+          gap: 20px;
           margin-top: 30px;
           padding: 0 40px;
 
           .calculator_block_attention_name {
-            font-family: 'Open Sans Condensed';
+            font-family: $font-open-sans;
             font-style: normal;
             font-weight: 700;
             font-size: 48px;
-            line-height: 100%;
-            color: #FF4343;
+            color: $cCoralRed;
           }
 
           .calculator_block_attention_name_text {
-            font-family: 'Inter';
+            font-family: $font-roboto;
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
-            line-height: 120%;
-            color: #444444;
+            color: $cTundora;
             max-width: 512px;
           }
         }
 
-        .calculator_block_parrams {
+        .calculator_block_params {
           width: 100%;
           display: flex;
           justify-content: space-between;
           align-items: flex-start;
           padding: 0 40px;
           margin-bottom: 20px;
+          gap: 20px;
+          @media(max-width: $md4 - 1 + px) {
+            padding: 0;
+            flex-direction: column;
+          }
 
-          .parrams_left {
+          .params_left {
             max-width: 582px;
             width: 100%;
 
-            h4 {
-              font-family: 'Open Sans Condensed';
+            .params_left-info {
+              font-family: $font-open-sans;
               font-style: normal;
               font-weight: 700;
               font-size: 18px;
-              line-height: 120%;
-              color: #1E9CDB;
+              color: $cCerulean;
               margin-bottom: 20px;
             }
 
-            p {
+            .params_left-item {
               width: 100%;
               display: flex;
               justify-content: space-between;
               align-items: center;
               margin-bottom: 10px;
-              font-family: 'Inter';
+              font-family: $font-roboto;
               font-style: normal;
               font-weight: 400;
               font-size: 16px;
-              line-height: 110%;
-              color: #444444;
+              color: $cTundora;
+              gap: 10px;
 
               &:last-child {
                 margin-bottom: 0;
               }
 
               span {
-                max-width: 185px;
+                max-width: 100px;
                 width: 100%;
                 display: block;
+                @media(max-width: $md2 - 1 + px) {
+                  max-width: 30px;
+                }
               }
             }
           }
 
-          .parrams_right {
+          .params_right {
             max-width: 660px;
             width: 100%;
 
-            h4 {
-              font-family: 'Open Sans Condensed';
+            .params_right-info {
+              font-family: $font-open-sans;
               font-style: normal;
               font-weight: 700;
               font-size: 32px;
-              line-height: 100%;
-              color: #FF4343;
+              color: $cCoralRed;
               margin-bottom: 14px;
             }
 
-            p {
-              font-family: 'Inter';
+            .params_right-text {
+              font-family: $font-roboto;
               font-style: normal;
               font-weight: 400;
               font-size: 16px;
-              line-height: 120%;
-              color: #444444;
+              color: $cTundora;
             }
           }
         }
@@ -544,14 +1011,17 @@
           padding: 0 40px;
           margin-bottom: 20px;
 
-          h4 {
-            font-family: 'Open Sans Condensed';
+          @media(max-width: $md3 - 1 + px) {
+            padding: 20px 0;
+          }
+
+          .calculator_block_typesize-title {
+            font-family: $font-open-sans;
             font-style: normal;
             font-weight: 700;
             font-size: 18px;
-            line-height: 120%;
             margin-bottom: 20px;
-            color: #1E9CDB;
+            color: $cCerulean;
           }
 
           .calculator_block_typesize_item {
@@ -566,25 +1036,24 @@
               margin-bottom: 0;
             }
 
-            p {
-              font-family: 'Inter';
+            div {
+              font-family: $font-roboto;
               font-style: normal;
               font-weight: 400;
               font-size: 16px;
-              line-height: 110%;
               max-width: 382px;
               width: 100%;
-              color: #444444;
+              color: $cTundora;
             }
 
             span {
-              font-family: 'Inter';
+              font-family: $font-roboto;
               font-style: normal;
               font-weight: 700;
               font-size: 16px;
               line-height: 120%;
               text-align: center;
-              color: #444444;
+              color: $cTundora;
               max-width: 185px;
             }
           }
@@ -932,10 +1401,6 @@
 @media(max-width: 1300px) {
   .calculator_page {
     .calculator_cont {
-      //.calculator_title {
-      //  font-size: 40px;
-      //}
-
       .calculator_box {
         .calculator_box_tabs {
           .set_calculator {
@@ -946,21 +1411,15 @@
         }
 
         .calculator_block {
-          .calculator_block_topText {
-            padding: 20px 20px;
-
-            .calculator_block_topText_decript {
+          .calculator_block_top-text {
+            .calculator_block_top-text_description {
               font-size: 12px;
             }
           }
 
           .calculator_block_selects {
-            //padding: 20px 20px;
-            //margin-bottom: 20px;
-            //gap: 20px;
 
             .selects_item {
-              //max-width: 520px;
 
               .selects_item_name {
                 font-size: 16px;
@@ -970,15 +1429,6 @@
               .selects_item_flex {
                 gap: 10px;
 
-                //label {
-                  //max-width: 160px;
-
-                  //select {
-                  //  height: 40px;
-                  //  padding: 0 10px;
-                  //  font-size: 17px;
-                  //}
-                //}
               }
             }
 
@@ -993,7 +1443,6 @@
           }
 
           .calculator_block_info {
-            padding: 0 20px;
 
             .info_table {
               gap: 10px;
@@ -1031,8 +1480,6 @@
               }
 
               .info_table_img {
-                max-width: 280px;
-                width: 100%;
 
                 img {
                   width: 100%;
@@ -1042,10 +1489,7 @@
           }
 
           .calculator_block_bottom {
-            max-width: 980px;
-            padding: 0 20px;
-
-            .bottomcalc {
+            .bottom_calc {
               .calc {
                 .calc_top {
                   .calc_top_left {
@@ -1067,6 +1511,7 @@
                           font-size: 16px;
                           margin-bottom: 10px;
                         }
+
                       }
                     }
 
@@ -1076,15 +1521,12 @@
                       .calc_bottom_name {
                         font-size: 14px;
 
-                        span {
-                          max-width: 185px;
-                        }
                       }
                     }
                   }
 
                   .calc_top_right {
-                    max-width: 378px;
+                    max-width: 460px;
 
                     .calc_top_right_name {
                       font-size: 16px;
@@ -1092,11 +1534,8 @@
                     }
 
                     .calc_top_right_text {
-                      font-size: 12px;
+                      font-size: 14px;
 
-                      span {
-                        max-width: 185px;
-                      }
                     }
                   }
                 }
@@ -1155,8 +1594,6 @@
           }
 
           .calculator_block_typesize {
-            padding: 0 40px;
-            margin-bottom: 20px;
 
             h4 {
               font-size: 18px;
@@ -1328,18 +1765,8 @@
 }
 
 @media(max-width: $md3 + px) {
-  //.calculator_page {
-  //  padding: 40px 20px;
-  //}
   .calculator_page {
-    //padding-right: 20px;
-
     .calculator_cont {
-      //.calculator_title {
-      //  font-size: 30px;
-      //  margin-bottom: 20px;
-      //}
-
       .calculator_box {
         .calculator_box_tabs {
           background: unset;
@@ -1368,24 +1795,14 @@
         }
 
         .calculator_block {
-          .calculator_block_topText {
+          .calculator_block_top-text {
             padding: 0;
             background: unset;
             margin-bottom: 20px;
           }
 
           .calculator_block_selects {
-            //padding: 20px 0px;
-            //background: unset;
-            //margin-bottom: 20px;
-            //gap: 20px;
-            //display: grid;
-            //grid-template-columns: 1fr 1fr;
-
             .selects_item {
-              //max-width: unset;
-              //width: auto;
-
               .selects_item_name {
                 font-size: 16px;
                 margin-bottom: 10px;
@@ -1408,9 +1825,6 @@
             }
 
             .selects_item2 {
-              //max-width: unset;
-              //width: 100%;
-
               .selects_item_flex {
                 gap: 10px;
                 flex-direction: column;
@@ -1440,13 +1854,7 @@
             }
           }
 
-          //.calculator_block_selects2 {
-          //  grid-template-columns: 1fr;
-          //}
-
           .calculator_block_info {
-            padding: 0 0px;
-
             .info_table {
               gap: 10px;
               flex-wrap: wrap-reverse;
@@ -1500,9 +1908,6 @@
               }
 
               .info_table_img {
-                max-width: 280px;
-                width: 100%;
-
                 img {
                   width: 100%;
                 }
@@ -1639,8 +2044,6 @@
           }
 
           .calculator_block_typesize {
-            padding: 0 40px;
-            margin-bottom: 20px;
 
             h4 {
               font-size: 18px;
