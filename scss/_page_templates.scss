@@ -6,6 +6,9 @@
     flex-direction: column;
     padding: 0 15px;
     width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+
     @media(min-width: $md2 + px) {
       padding: 0 30px;
       flex-direction: row;
@@ -13,6 +16,7 @@
 
     > .main__container {
       width: 100%;
+
       @media(min-width: $md2 + px) {
         width: #{calc(100% - 280px)};
       }
@@ -21,6 +25,7 @@
     > .aside__container {
       display: block;
       width: 100%;
+
       @media(min-width: $md2 + px) {
         width: 280px;
         padding-left: 30px;
