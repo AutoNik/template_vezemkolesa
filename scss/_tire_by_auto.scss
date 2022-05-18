@@ -139,6 +139,7 @@
               display: flex;
               align-items: center;
               gap: 10px;
+              flex-grow: 1;
 
               @media(max-width: $md4 - 1 + px) {
                 width: 100%;
@@ -158,7 +159,10 @@
               }
 
               .filter_bottom_left-input {
-                width: 100%;
+
+                @media(max-width: $md4 - 1 + px) {
+                  width: 100%;
+                }
 
                 > input {
                   width: 100%;
@@ -283,6 +287,226 @@
 
               }
 
+            }
+          }
+        }
+      }
+    }
+  }
+
+  > .tire-by-model {
+    width: 100%;
+    padding: 20px 0;
+
+    > .tire-by-model_container {
+      max-width: 1800px;
+      width: 100%;
+      margin: 0 auto;
+
+      > .tire-by-model_container-title {
+        font-family: $font-open-sans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: clamp(30px, 3.2vw, 32px);
+        color: $cTundora;
+      }
+
+      > .tire-by-model_container_content {
+        width: 100%;
+        max-width: 1442px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        @media(max-width: $md1 - 1 + px) {
+          gap: 10px;
+        }
+
+        @media(max-width: $md2 - 1 + px) {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        > .tire-by-model_container_content-model {
+          display: flex;
+          gap: 120px;
+
+          @media(max-width: $md1 - 1 + px) {
+            gap: 10px;
+          }
+
+          @media(max-width: $md2 - 1 + px) {
+            width: 100%;
+            flex-direction: column;
+          }
+
+          > .tire-by-model_container_content-image {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-self: center;
+            gap: 10px;
+
+            > .model-image {
+              width: 100%;
+              max-width: 300px;
+              min-width: 175px;
+
+              > img {
+                width: 100%;
+                object-fit: contain;
+              }
+            }
+
+            > .model-name {
+              font-family: $font-open-sans;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 18px;
+              color: $cTundora;
+            }
+          }
+          > .tire-by-model_container_content-tire_type {
+            display: flex;
+            gap: 100px;
+
+            @media(max-width: $md1 - 1 + px) {
+              gap: 10px;
+            }
+
+            @media(max-width: $md2 - 1 + px) {
+              justify-content: center;
+            }
+
+            > .tire_type_box {
+              display: flex;
+              flex-direction: column;
+              gap: 25px;
+
+              > .tire_type_box-title {
+                font-family: $font-open-sans;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                color: $cIron;
+              }
+
+              > .tire_type_box-items {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                > .tire_type_item {
+                  display: flex;
+                  align-items: center;
+
+                  > .tire_type_item-image {
+                    height: 32px;
+                    width: 32px;
+                    min-width: 32px;
+                    background-size: contain;
+                  }
+                  > .tire_type_item-info {
+                    font-family: $font-open-sans;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: $cCerulean;
+                    margin: 0 40px 0 10px;
+                    white-space: nowrap;
+
+                    @media(max-width: $md1 - 1 + px) {
+                      margin: 0 10px 0 10px;
+                      font-size: clamp(12px, 1.2vw, 18px);
+                    }
+                  }
+                  > .tire_type_item-link {
+                    height: 32px;
+                    width: 32px;
+                    min-width: 32px;
+                    border: 1px solid #C4C4C4;
+                    border-radius: 3px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: 280ms;
+
+                    &:hover {
+                      transform: scale(1.1);
+                    }
+
+                    > img {
+                      height: 100%;
+                      width: 100%;
+                      object-fit: contain;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        > .tire-by-model_container_content-message {
+          width: 100%;
+          max-width: 360px;
+          min-width: 200px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px 40px;
+          box-sizing: border-box;
+          background: $cAlabaster;
+          border-radius: 6px;
+          transition: 280ms;
+
+          &:hover {
+            box-shadow: 0 3px 9px 1px $cIron;
+          }
+
+          @media(max-width: $md1 - 1 + px) {
+            padding: clamp(10px, 1vw, 20px);
+          }
+
+          > .message-icon {
+            height: 30px;
+            width: 30px;
+            min-width: 30px;
+            > img {
+              height: 100%;
+              width: 100%;
+              object-fit: contain;
+            }
+          }
+          > .message-text {
+            font-family: $font-roboto;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 120%;
+            color: $cTundora;
+            margin: 15px 0 20px 0;
+
+            @media(max-width: $md1 - 1 + px) {
+              font-size: clamp(10px, 1vw, 14px);
+            }
+          }
+          > .message-additional {
+            > .message-additional-text {
+              font-family: $font-open-sans;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 18px;
+              color: $cTundora;
+
+              @media(max-width: $md1 - 1 + px) {
+                font-size: clamp(14px, 1.2vw, 18px);
+              }
+
+              > span {
+                color: $cCerulean;
+              }
             }
           }
         }
