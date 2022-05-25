@@ -352,6 +352,31 @@
   color: $cWhite;
   background-color: $color-accent;
   border-radius: 4px;
+  transition: 280ms;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.catalog__filter__control__reset__button__container {
+  width: 100%;
+  padding: 10px 10px 0 10px;
+  text-align: center;
+
+  @media screen and (min-width: $md2 + px) {
+    padding-top: 15px;
+    width: 200px;
+  }
+}
+
+.catalog__filter__control__reset__button {
+  border-bottom: 1px dashed $cCerulean;
+  transition: 280ms;
+
+  &:hover {
+    border-bottom: 1px solid $cCerulean;
+  }
 }
 
 .catalog__filter__control__set {
