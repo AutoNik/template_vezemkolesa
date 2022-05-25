@@ -786,6 +786,18 @@
 
           }
 
+          .cost-title {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            font-size: 20px;
+
+            @media(max-width: $md3 - 1 + px) {
+              margin: 20px 0 0 0;
+              font-size: 4vw;
+            }
+          }
+
           .cost-radio {
             display: flex;
             flex-direction: row;
@@ -1158,7 +1170,7 @@
 
             @media(max-width: $md3 - 1 + px) {
               border: none;
-              margin-bottom: 11.1vw;
+              margin-bottom: 0;
             }
 
           }
@@ -1410,6 +1422,91 @@
             }
           }
 
+        }
+
+        > .additional-services {
+
+          @media(max-width: $md3 - 1 + px) {
+            padding: 0 5%;
+            box-sizing: border-box;
+          }
+
+          > .additional-services-title {
+            font-family: $font-open-sans;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 100%;
+            color: $cTundora;
+            margin: 0;
+
+            @media(max-width: $md3 - 1 + px) {
+              font-size: 6vw;
+            }
+
+          }
+
+          > .additional-services-list {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0;
+
+            > .additional-services-list-item {
+              display: flex;
+              align-items: center;
+              min-height: 50px;
+
+              > .additional-services-list-item-text {
+                width: 70%;
+
+                @media(max-width: $md3 - 1 + px) {
+                  width: 85%;
+                }
+              }
+
+              > .additional-services-list-item-price {
+                width: 30%;
+                display: flex;
+                padding: 0 0 0 10px;
+                box-sizing: border-box;
+
+                @media(max-width: $md3 - 1 + px) {
+                  width: 15%;
+                }
+              }
+            }
+          }
+
+          > .additional-storage-list {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0;
+
+            > .additional-storage-list-item {
+              display: flex;
+              align-items: center;
+              min-height: 50px;
+
+              > .additional-storage-list-item-text {
+                width: 70%;
+
+                @media(max-width: $md3 - 1 + px) {
+                  width: 85%;
+                }
+              }
+
+              > .additional-storage-list-item-price {
+                width: 30%;
+                display: flex;
+                padding: 0 0 0 10px;
+                box-sizing: border-box;
+
+                @media(max-width: $md3 - 1 + px) {
+                  width: 15%;
+                }
+              }
+            }
+          }
         }
 
         > .tirefitting-order {
