@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ru-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vezemkolesa Tire Service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Open Sans Condensed:wght@300;700&display=swap' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+
+<div class="tire-service">
+    <div class="tire-service__content">
+        <h1 class="tire-service__content-title">Шиномонтаж</h1>
+        <div class="tire-service__content__container row">
+            <div class="content">
+
+                <section class="banner">
+                    <div class="banner-header desktop">
+                        Шиномонтаж от автомеханников <br>
+                        с 10 летним опытом и гарантией <br>
+                        на выполненные работы от 2 930 рублей!
+                    </div>
+                    <div class="banner-header mobile">
+                        Шиномонтаж от автомеханников <br>
+                        с 10 летним опытом и гарантией <br>
+                        на выполненные работы <br>
+                        от 2 930 рублей!
+                    </div>
+                    <div class="banner-text">
+                        Оставьте заявку и получите диагностику тормозных колодок <br>
+                        и обработку ступицы — бесплатно!
+                    </div>
+                    <ul class="banner-list">
+                        <li>Без наценок <br> и переплат</li>
+                        <li>Ремонт колес с 12 по 27 <br> диаметр</li>
+                        <li>Удобное расположение <br> шинных центров</li>
+                        <li>Обслуживание <br> без очередей</li>
+                        <li>Работаем в выходные <br> и праздники</li>
+                        <li>Немецкое оборудование <br> Hofmann</li>
+                    </ul>
+                    <form class="banner-form" action="">
+                        <input type="text" placeholder="+7(___) ___-__-__" required>
+                        <input type="submit" value="Оставить заявку">
+                    </form>
+                </section>
+
+                <section class="underbanner">
+                    <img class="secondary-banner" src="site/assets/img/page/tire-service/secondary-banner.png" alt="secondary-banner.png">
+                    <div class="services-block-row">
+                        <div class="advantages-item">
+                            <img src="site/assets/img/page/tire-service/pads.svg" alt="pads.svg">
+                            <div class="description">
+                                <h3>Проверка тормозных колодок — бесплатно</h3>
+                                <p>Проверим тормозные колодки на предмет износа.</p>
+                            </div>
+                        </div>
+                        <div class="advantages-item">
+                            <img src="site/assets/img/page/tire-service/gear-dot.svg" alt="gear-dot.svg">
+                            <div class="description">
+                                <h3>Обработка ступицы в подарок</h3>
+                                <p>Защита ступицы от коррозии и действия влаги.</p>
+                            </div>
+                        </div>
+                        <div class="advantages-item">
+                            <img src="site/assets/img/page/tire-service/gear-attention.svg" alt="gear-attention.svg">
+                            <div class="description">
+                                <h3>Гарантия на работы</h3>
+                                <p>Даем полную гарантию на выполненные работы.</p>
+                            </div>
+                        </div>
+                        <div class="advantages-item">
+                            <img src="site/assets/img/page/tire-service/double-tire.svg" alt="double-tire.svg">
+                            <div class="description">
+                                <h3>Скидка на хранение шин — 50%</h3>
+                                <p>При покупке комплекта шин, скидка на хранение — 50 %</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="map desktop">
+                    <div class="adresses">
+                        <div class="adress" data-value="map-1">
+                            <p><span>Москва</span><a class="metro-icon"></a>Автозаводская, ул. Кораблева, 156</p>
+                        </div>
+                        <div class="adress active" data-value="map-2">
+                            <p><span>Москва</span><a class="metro-icon"></a>Текстильщики, ул. ул. Строителей, 10</p>
+                        </div>
+                        <div class="adress" data-value="map-3">
+                            <p><span>Химки</span> ул. Автозаводская, 3</p>
+                        </div>
+                        <div class="adress" data-value="map-4">
+                            <p><span>Зеленоград</span>ул. Автозаводская, 3</p>
+                        </div>
+                        <div class="adress" data-value="map-5">
+                            <p><span>Мытищи</span>ул. Ботаническая, 25</p>
+                        </div>
+                    </div>
+                    <div class="map-frame">
+                        <!-- <img src="img/export_images/Map.png" alt=""> -->
+                        <iframe class="map-1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.412886807311!2d37.69283681598002!3d55.68180908053439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab48e50c6c9f1%3A0x75b63156fa67a190!2z0JrQvtGA0LDQsdC10LvRjNC90LDRjyDRg9C7Liwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sua!4v1648107607793!5m2!1sru!2sua" width="50" height="50" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe class="map-2 active-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2257.965684224991!2d37.4504194159745!3d55.53296698049508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414aab7b3f57b417%3A0xd0adb596c808be99!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDEwLCDQr9C80L7QvdGC0L7QstC-LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTQyNzkx!5e0!3m2!1sru!2sua!4v1648106369837!5m2!1sru!2sua" width="50" height="50" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe class="map-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.8240799972805!2d37.661279015981066!3d55.70942958054167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab4cb2ac4fba5%3A0xdd65ebb3eab7e92!2z0JDQstGC0L7Qt9Cw0LLQvtC00YHQutCw0Y8gedC7LiwgMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDExNTI4MA!5e0!3m2!1sru!2sua!4v1648107745499!5m2!1sru!2sua" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe  class="map-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35709.77873640847!2d37.16709360946823!3d55.98643448772343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b515040599b08b%3A0x3b05106b263a30c4!2z0JfQtdC70LXQvdC-0LPRgNCw0LQsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2sua!4v1648107836796!5m2!1sru!2sua" width="50" height="50" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe  class="map-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82670.80663175575!2d37.63642092206287!3d55.91328712987315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b530a4711e2737%3A0xdf936bea0158cfed!2z0JHQvtGC0LDQvdC40YfQtdGB0LrQsNGPINGD0LsuLCAyNSwg0JLQtdGI0LrQuCwg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0YHQuNGPLCAxMjc1NDM!5e0!3m2!1sru!2sua!4v1648107934511!5m2!1sru!2sua" width="50" height="50" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </section>
+
+                <section class="advantages">
+                    <h2>Преимущества профессионального шиномонтажа</h2>
+                    <div class="advantages-text">
+                        <p>
+                            Заказывая услугу шиномонтажа в нашей компании, клиенты ориентируются на конкурентные достоинства:
+                        </p>
+                        <p>
+                            Высококвалифицированные специалисты. Персонал постоянно повышает квалификацию, ежегодно аттестуется по всем позициям шиномонтажного сервиса, имеет многолетний опыт работы с любыми автошинами (низкопрофильные, Run Flat и т.д.) и колесными дисками.
+                        </p>
+                        <p>
+                            Шиномонтажное оборудование премиум-класса. Все сервисные центры оснащены шиномонтажным оборудованием немецкой фирмы Hofmann и итальянской фирмы Corghi, которые являются мировыми лидерами производства шиномонтажного оборудования. Эти компании используют для своей техники самые современные инновационные технологии, что позволяет нашим мастерам качественно работать с любыми сложными шинами и дисками.
+                        </p>
+                    </div>
+                    <a href="" class="read-more">Читать полностью</a>
+                    <div class="services">
+                        <div class="service-item">
+                            <img src="site/assets/img/page/tire-service/tire-fitting.svg" alt="tire-fitting.svg">
+                            <p>Легковой шиномонтаж</p>
+                        </div>
+                        <div class="service-item">
+                            <img src="site/assets/img/page/tire-service/repearing.svg" alt="repearing.svg">
+                            <p>Ремонт шин</p>
+                        </div>
+                        <div class="service-item">
+                            <img src="site/assets/img/page/tire-service/balancing.svg" alt="balancing.svg">
+                            <p>Балансировка</p>
+                        </div>
+                        <div class="service-item">
+                            <img src="site/assets/img/page/tire-service/blackening.svg" alt="blackening.svg">
+                            <p>Чернение колес</p>
+                        </div>
+                        <div class="service-item">
+                            <img src="site/assets/img/page/tire-service/discs.svg" alt="discs.svg">
+                            <p>Правка дисков</p>
+                        </div>
+                        <div class="service-item">
+                            <img src="site/assets/img/page/tire-service/storage.svg" alt="storage.svg">
+                            <p>Хранение колес</p>
+                        </div>
+                        <div class="service-item">
+                            <img src="site/assets/img/page/tire-service/studding.svg" alt="studding.svg">
+                            <p>Повторная ошиповка</p>
+                        </div>
+                        <div class="service-item">
+                            <img src="site/assets/img/page/tire-service/sensor.svg" alt="sensor.svg">
+                            <p>Установка датчика давления</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="cost">
+                    <h2>Стоимость услуг</h2>
+                    <div class="cost-radio">
+                        <div class="radio radio-1">
+                            <input class="custom-radio" type="radio" id="passenger-car" name="cost-switch" value="passenger-car-switch" checked>
+                            <label for="passenger-car">Шиномонтаж легковых авто</label>
+                        </div>
+
+                        <div class="radio radio-2">
+                            <input class="custom-radio" type="radio" id="truck-car" name="cost-switch" value="truck-car-switch">
+                            <label for="truck-car">Шиномонтаж внедорожников, SUV, Микроавтобусов</label>
+                        </div>
+                        <div class="switch-button mobile">
+                            <img src="site/assets/img/page/tire-service/blue-arrow-down.svg" alt="blue-arrow-down.svg">
+                            <img src="site/assets/img/page/tire-service/blue-arrow-down.svg" alt="blue-arrow-down.svg">
+                        </div>
+                    </div>
+                    <div class="separator mobile"></div>
+                    <table id="passenger-car-switch" class="cost-table">
+                        <tbody>
+                        <tr>
+                            <th>Размер колеса</th>
+                            <th>D10-13</th>
+                            <th>D14</th>
+                            <th>D15</th>
+                            <th>D16</th>
+                            <th>D17</th>
+                            <th>D18-20</th>
+                            <th>D21-23</th>
+                        </tr>
+                        <tr>
+                            <th>Комплексы</th>
+                            <th colspan="7"><span class="desktop">Стоимость за </span><span>4 колеса</span></th>
+                        </tr>
+                        <tr>
+                            <td>Балансировка со снятием и <br> чисткой <br> балансировка, снятие и установка</td>
+                            <td class="D10-13">800 ₽</td>
+                            <td class="D14">1000 ₽</td>
+                            <td class="D15">1200 ₽</td>
+                            <td class="D16">1400 ₽</td>
+                            <td class="D17">1800 ₽</td>
+                            <td class="D18-20">2000 ₽</td>
+                            <td class="D21-23">3000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Замена шин со сбором колёс балансировка, демонтаж, монтаж, снятие и установка</td>
+                            <td class="D10-13">1500 ₽</td>
+                            <td class="D14">1600 ₽</td>
+                            <td class="D15">1900 ₽</td>
+                            <td class="D16">2400 ₽</td>
+                            <td class="D17">3000 ₽</td>
+                            <td class="D18-20">3900 ₽</td>
+                            <td class="D21-23">5300 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Замена шин со сбором колёс <br> профиль < 50%, M/T, RunFlat или C балансировка, демонтаж, монтаж, снятие и установка</td>
+                            <td class="D10-13">1800 ₽</td>
+                            <td class="D14">2200 ₽</td>
+                            <td class="D15">2600 ₽</td>
+                            <td class="D16">3700 ₽</td>
+                            <td class="D17">4500 ₽</td>
+                            <td class="D18-20">5700 ₽</td>
+                            <td class="D21-23">7300 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Сбор с балансировкой балансировка, монтаж, установка вентиля</td>
+                            <td class="D10-13">800 ₽</td>
+                            <td class="D14">1000 ₽</td>
+                            <td class="D15">1200 ₽</td>
+                            <td class="D16">1400 ₽</td>
+                            <td class="D17">1800 ₽</td>
+                            <td class="D18-20">2000 ₽</td>
+                            <td class="D21-23">3000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Сбор с балансировкой <br> профиль < 50%, M/T, RunFlat или C балансировка, монтаж, установка вентиля</td>
+                            <td class="D10-13">1000 ₽</td>
+                            <td class="D14">1200 ₽</td>
+                            <td class="D15">1400 ₽</td>
+                            <td class="D16">2000 ₽</td>
+                            <td class="D17">2600 ₽</td>
+                            <td class="D18-20">3000 ₽</td>
+                            <td class="D21-23">4100 ₽</td>
+                        </tr>
+                        <tr>
+                            <th>Стандартные работы</th>
+                            <th colspan="7"><span class="desktop">Стоимость за</span> <span>1 колесо</span></th>
+                        </tr>
+                        <tr>
+                            <td>Балансировка</td>
+                            <td class="D10-13">130 ₽</td>
+                            <td class="D14">140 ₽</td>
+                            <td class="D15">160 ₽</td>
+                            <td class="D16">210 ₽</td>
+                            <td class="D17">280 ₽</td>
+                            <td class="D18-20">310 ₽</td>
+                            <td class="D21-23">380 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Демонтаж</td>
+                            <td class="D10-13">80 ₽</td>
+                            <td class="D14">85 ₽</td>
+                            <td class="D15">90 ₽</td>
+                            <td class="D16">120 ₽</td>
+                            <td class="D17">130 ₽</td>
+                            <td class="D18-20">220 ₽</td>
+                            <td class="D21-23">260 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж</td>
+                            <td class="D10-13">80 ₽</td>
+                            <td class="D14">85 ₽</td>
+                            <td class="D15">90 ₽</td>
+                            <td class="D16">125 ₽</td>
+                            <td class="D17">160 ₽</td>
+                            <td class="D18-20">210 ₽</td>
+                            <td class="D21-23">320 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Чернение шин</td>
+                            <td class="D10-13">80 ₽</td>
+                            <td class="D14">80 ₽</td>
+                            <td class="D15">80 ₽</td>
+                            <td class="D16">80 ₽</td>
+                            <td class="D17">80 ₽</td>
+                            <td class="D18-20">80 ₽</td>
+                            <td class="D21-23">80 ₽</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <table id="truck-car-switch" class="cost-table deactive">
+                        <tbody>
+                        <tr>
+                            <th>Размер колеса</th>
+                            <th>D10-13</th>
+                            <th>D14</th>
+                            <th>D15</th>
+                            <th>D16</th>
+                            <th>D17</th>
+                            <th>D18-20</th>
+                            <th>D21-23</th>
+                        </tr>
+                        <tr>
+                            <th>Комплексы</th>
+                            <th colspan="7"><span class="desktop">Стоимость за </span><span>4 колеса</span></th>
+                        </tr>
+                        <tr>
+                            <td>Балансировка со снятием и <br> чисткой <br> балансировка, снятие и установка</td>
+                            <td class="D10-13">8000 ₽</td>
+                            <td class="D14">10000 ₽</td>
+                            <td class="D15">12000 ₽</td>
+                            <td class="D16">14000 ₽</td>
+                            <td class="D17">18000 ₽</td>
+                            <td class="D18-20">20000 ₽</td>
+                            <td class="D21-23">30000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Замена шин со сбором колёс балансировка, демонтаж, монтаж, снятие и установка</td>
+                            <td class="D10-13">15000 ₽</td>
+                            <td class="D14">16000 ₽</td>
+                            <td class="D15">19000 ₽</td>
+                            <td class="D16">24000 ₽</td>
+                            <td class="D17">30000 ₽</td>
+                            <td class="D18-20">39000 ₽</td>
+                            <td class="D21-23">53000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Замена шин со сбором колёс <br> профиль < 50%, M/T, RunFlat или C балансировка, демонтаж, монтаж, снятие и установка</td>
+                            <td class="D10-13">18000 ₽</td>
+                            <td class="D14">22000 ₽</td>
+                            <td class="D15">26000 ₽</td>
+                            <td class="D16">37000 ₽</td>
+                            <td class="D17">45000 ₽</td>
+                            <td class="D18-20">57000 ₽</td>
+                            <td class="D21-23">73000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Сбор с балансировкой балансировка, монтаж, установка вентиля</td>
+                            <td class="D10-13">8000 ₽</td>
+                            <td class="D14">10000 ₽</td>
+                            <td class="D15">12000 ₽</td>
+                            <td class="D16">14000 ₽</td>
+                            <td class="D17">18000 ₽</td>
+                            <td class="D18-20">20000 ₽</td>
+                            <td class="D21-23">30000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Сбор с балансировкой <br> профиль < 50%, M/T, RunFlat или C балансировка, монтаж, установка вентиля</td>
+                            <td class="D10-13">10000 ₽</td>
+                            <td class="D14">12000 ₽</td>
+                            <td class="D15">14000 ₽</td>
+                            <td class="D16">20000 ₽</td>
+                            <td class="D17">26000 ₽</td>
+                            <td class="D18-20">30000 ₽</td>
+                            <td class="D21-23">41000 ₽</td>
+                        </tr>
+                        <tr>
+                            <th>Стандартные работы</th>
+                            <th colspan="7"><span class="desktop">Стоимость за</span> <span>1 колесо</span></th>
+                        </tr>
+                        <tr>
+                            <td>Балансировка</td>
+                            <td class="D10-13">1300 ₽</td>
+                            <td class="D14">1400 ₽</td>
+                            <td class="D15">1600 ₽</td>
+                            <td class="D16">2100 ₽</td>
+                            <td class="D17">2800 ₽</td>
+                            <td class="D18-20">3100 ₽</td>
+                            <td class="D21-23">3800 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Демонтаж</td>
+                            <td class="D10-13">800 ₽</td>
+                            <td class="D14">850 ₽</td>
+                            <td class="D15">900 ₽</td>
+                            <td class="D16">120 ₽</td>
+                            <td class="D17">1300 ₽</td>
+                            <td class="D18-20">2200 ₽</td>
+                            <td class="D21-23">2600 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Монтаж</td>
+                            <td class="D10-13">800 ₽</td>
+                            <td class="D14">850 ₽</td>
+                            <td class="D15">900 ₽</td>
+                            <td class="D16">1250 ₽</td>
+                            <td class="D17">1600 ₽</td>
+                            <td class="D18-20">2100 ₽</td>
+                            <td class="D21-23">3200 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Чернение шин</td>
+                            <td class="D10-13">800 ₽</td>
+                            <td class="D14">800 ₽</td>
+                            <td class="D15">800 ₽</td>
+                            <td class="D16">800 ₽</td>
+                            <td class="D17">800 ₽</td>
+                            <td class="D18-20">800 ₽</td>
+                            <td class="D21-23">800 ₽</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="select mobile" id="select-1">
+                        <button type="button" class="select__toggle" name="tire-size" value="D10-13" data-select="toggle" data-index="0">
+                            D10-13
+                        </button>
+                        <div class="image">
+                            <img src="site/assets/img/page/tire-service/blue-arrow-down.svg" alt="blue-arrow-down.svg">
+                        </div>
+                        <div class="select__dropdown">
+                            <ul class="select__options">
+                                <li class="select__option select__option_selected" data-select="option" data-value="D10-13" data-index="0">
+                                    <div class="image"><img src="site/assets/img/page/tire-service/blue-check.svg" alt="blue-check.svg"></div>
+                                    D10-13
+                                </li>
+                                <li class="select__option" data-select="option" data-value="D14" data-index="1">
+                                    <div class="image"><img src="site/assets/img/page/tire-service/blue-check.svg" alt="blue-check.svg"></div>
+                                    D14
+                                </li>
+                                <li class="select__option" data-select="option" data-value="D15" data-index="2">
+                                    <div class="image"><img src="site/assets/img/page/tire-service/blue-check.svg" alt="blue-check.svg"></div>
+                                    D15
+                                </li>
+                                <li class="select__option" data-select="option" data-value="D16" data-index="3">
+                                    <div class="image"><img src="site/assets/img/page/tire-service/blue-check.svg" alt="blue-check.svg"></div>
+                                    D16
+                                </li>
+                                <li class="select__option" data-select="option" data-value="D17" data-index="4">
+                                    <div class="image"><img src="site/assets/img/page/tire-service/blue-check.svg" alt="blue-check.svg"></div>
+                                    D17
+                                </li>
+                                <li class="select__option" data-select="option" data-value="D18-20" data-index="5">
+                                    <div class="image"><img src="site/assets/img/page/tire-service/blue-check.svg" alt="blue-check.svg"></div>
+                                    D18-20
+                                </li>
+                                <li class="select__option" data-select="option" data-value="D21-23" data-index="6">
+                                    <div class="image"><img src="site/assets/img/page/tire-service/blue-check.svg" alt="blue-check.svg"></div>
+                                    D21-23
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tirefitting-order desktop">
+                    <h2>Запись на шиномонтаж</h2>
+                    <form action="">
+                        <div class="select-row">
+                            <div class="select" id="select-2">
+                                <button type="button" class="select__toggle" name="car" value="ford" data-select="toggle" data-index="1">
+                                    Выберите тип авто
+                                </button>
+                                <div class="image">
+                                    <img src="site/assets/img/page/tire-service/blue-arrow-down.svg" alt="blue-arrow-down.svg">
+                                </div>
+                                <div class="select__dropdown">
+                                    <ul class="select__options">
+                                        <li class="select__option" data-select="option" data-value="volkswagen" data-index="0">
+                                            <div class="image"><img src="site/assets/img/page/tire-service/blue-check.svg" alt="blue-check.svg"></div>
+                                            Volkswagen
+                                        </li>
+                                        <li class="select__option select__option_selected" data-select="option" data-value="ford" data-index="1">
+                                            <div class="image"><img src="site/assets/img/page/tire-service/blue-check.svg" alt="blue-check.svg"></div>
+                                            Ford
+                                        </li>
+                                        <li class="select__option" data-select="option" data-value="toyota" data-index="2">
+                                            <div class="image"><img src="site/assets/img/page/tire-service/blue-check.svg" alt="blue-check.svg"></div>
+                                            Toyota
+                                        </li>
+                                        <li class="select__option" data-select="option" data-value="nissan" data-index="3">
+                                            <div class="image"><img src="site/assets/img/page/tire-service/blue-check.svg" alt="blue-check.svg"></div>
+                                            Nissan
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="date">
+                                <input id="date" type="date" value="20.03.2022">
+                                <div class="image">
+                                    <img class="blue-arrow" src="site/assets/img/page/tire-service/blue-arrow-down.svg" alt="blue-arrow-down.svg">
+                                    <img class="gray-arrow" src="site/assets/img/page/tire-service/gray-arrow-down.svg" alt="gray-arrow-down.svg">
+                                </div>
+                            </div>
+                            <div class="appt">
+                                <input id="appt" type="time" name="appt" min="09:00" max="18:00">
+                                <div class="image">
+                                    <img class="blue-arrow" src="site/assets/img/page/tire-service/blue-arrow-down.svg" alt="blue-arrow-down.svg">
+                                    <img class="gray-arrow" src="site/assets/img/page/tire-service/gray-arrow-down.svg" alt="gray-arrow-down.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" value="Записаться">
+                    </form>
+                </section>
+
+            </div>
+            <div class="tire-service-sidebar">
+
+                <section class="tire-order desktop">
+                    <div class="tire-order-header">
+                        <div class="phone-image">
+                            <img src="site/assets/img/page/tire-service/phone-incoming.svg" alt="phone-incoming.svg">
+                        </div>
+                        <h2>Быстрый заказ <br> шин</h2>
+                    </div>
+                    <div class="tire-order-text">
+                        Используйте, если цените свое время и <br>
+                        не хотите заполнять большую форму
+                    </div>
+                    <form class="tire-order-form" action="">
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="tel" placeholder="Номер телефона" required>
+                        <input type="submit" value="Перезвоните мне">
+                    </form>
+                </section>
+
+                <section class="promotions">
+                    <h2>Акции</h2>
+                    <a href="" class="promotion-card">
+                        <img src="site/assets/img/page/tire-service/promotion-gas.png" alt="promotion-gas.png">
+                        <div class="promotion-content">
+                            <div class="promotion-card-header">Заправиться с шинами Michelin</div>
+                            <div class="promotion-card-text">
+                                Всем покупателям комплекта зимних <br>
+                                или летних Michelin шин мы дарим <br>
+                                заправку полного бака топлива.
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="promotion-card">
+                        <img src="site/assets/img/page/tire-service/promotion-discount.png" alt="site/assets/img/page/tire-service/">
+                        <div class="promotion-content">
+                            <div class="promotion-card-header">Скидка на хранение 30%</div>
+                            <div class="promotion-card-text">
+                                Шины произведены из уникальной смеси c <br>
+                                добавлением кремня, разработанной для <br>
+                                увеличения сцепления с влажной <br>
+                                поверхностью, акцентируя внимание
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="promotion-card">
+                        <img src="site/assets/img/page/tire-service/promotion-tire-fitting.png" alt="promotion-tire-fitting.png">
+                        <div class="promotion-content">
+                            <div class="promotion-card-header">Заправиться с шинами Michelin</div>
+                            <div class="promotion-card-text">
+                                Шины произведены из уникальной смеси c <br>
+                                добавлением кремня, разработанной для <br>
+                                увеличения сцепления с влажной <br>
+                                поверхностью, акцентируя внимание
+                            </div>
+                        </div>
+                    </a>
+                </section>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="myModal">
+    <span id="myModal__close" class="close">&times;</span>
+    <h2>Корзина</h2>
+    <div class="cart-item">
+        <div class="cart-item-left">
+            <img src="site/assets/img/page/tire-service/cart-tire.jpg" alt="cart-tire.jpg">
+        </div>
+        <div class="cart-item-right">
+            <p class="cart-item-name">Автомобильная шина</p>
+            <p class="cart-item-product-name">Nokian HAKKA BLUE 2 SUV 175/70 R13 82T</p>
+            <div class="cart-item-right-bottom">
+                <div>
+                    <div class="cart-item-remove">-</div>
+                    <div class="quantity">4</div>
+                    <div class="cart-item-add">+</div>
+                    <div class="price">12480 ₽</div>
+                </div>
+                <div>
+                    <div class="articul">TS31970</div>
+                    <div class="trashbucket-delete"><img src="site/assets/img/page/tire-service/rubbish.png" alt="ubbish.png"></div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="cart-item">
+        <div class="cart-item-left">
+            <img src="site/assets/img/page/tire-service/cart-tire.jpg" alt="cart-tire.jpg">
+        </div>
+        <div class="cart-item-right">
+            <p class="cart-item-name">Автомобильная шина</p>
+            <p class="cart-item-product-name">Nokian HAKKA BLUE 2 SUV 175/70 R13 82T</p>
+            <div class="cart-item-right-bottom">
+                <div>
+                    <div class="cart-item-remove">-</div>
+                    <div class="quantity">4</div>
+                    <div class="cart-item-add">+</div>
+                    <div class="price">12480 ₽</div>
+                </div>
+                <div>
+                    <div class="articul">TS31970</div>
+                    <div class="trashbucket-delete"><img src="site/assets/img/page/tire-service/rubbish.png" alt="rubbish.png"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input type="submit" value="Оформить заказ">
+</div>
+<div id="myOverlay"></div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="site/assets/js/page/tire-service/script.js"></script
+</body>
+</html>

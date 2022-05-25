@@ -1,0 +1,297 @@
+@import "vars";
+
+.section-authorization {
+  width: 100%;
+  padding: 20px 0;
+
+  &_container {
+    padding: 0 60px;
+
+    @media(max-width: $md2 - 1 + px) {
+      padding: 0;
+    }
+
+    &-title {
+      font-family: $font-open-sans;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      color: $cTundora;
+
+      @media(max-width: $md4 - 1 + px) {
+        font-size: 36px;
+      }
+    }
+
+    &-content {
+      display: flex;
+      gap: 100px;
+
+      @media(max-width: $md2 - 1 + px) {
+        gap: 10px;
+      }
+
+      @media(max-width: $md3 - 1 + px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      > .section-authorization_image {
+        height: 100%;
+        width: 100%;
+        max-width: 430px;
+
+        > img {
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+
+      > .section-authorization_forms {
+        width: 100%;
+        max-width: 430px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: 50px 0 0 0;
+
+        > .section-authorization_buttons {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 50px;
+          //background-color: $cTundora;
+
+          > button {
+            width: #{calc(50% - 1px)};
+            height: 100%;
+            background: $cRegentGray;
+            color: $cWhite;
+            font-family: $font-open-sans;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            transition: 280ms;
+
+            &:hover {
+              background: $cAlabaster;
+              color: $cTundora;
+            }
+          }
+
+          > .active {
+            background: $cAlabaster;
+            color: $cTundora;
+          }
+        }
+
+        > .section-authorization_forms-block {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+
+          > .section-authorization_reg-form {
+
+            > .section-authorization_reg-form-title {
+              font-family: $font-open-sans;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 18px;
+              color: $cTundora;
+            }
+
+            > .section-authorization_reg-form-input {
+              width: 100%;
+              height: 50px;
+              margin: 10px 0 10px 0;
+
+              > input {
+                height: 100%;
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #DBE2E9;
+                border-radius: 4px;
+                background: $cWhite;
+
+                &::placeholder {
+                  font-family: $font-roboto;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 17px;
+                  color: $cRegentGray;
+                }
+              }
+            }
+
+            > .section-authorization_reg-form-checkbox {
+              width: 100%;
+              display: flex;
+              gap: 10px;
+
+              > input {
+                display: none;
+              }
+
+              > input:not(:checked) + .checkbox-view {
+                > img {
+                  display: none;
+                }
+              }
+
+              > .checkbox-view {
+                height: 18px;
+                width: 18px;
+                min-width: 18px;
+                border: 1px solid #B1B1B1;
+                border-radius: 4px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                > img {
+                  height: 100%;
+                  width: 100%;
+                  object-fit: contain;
+                }
+              }
+
+              > .checkbox-label {
+                font-family: $font-roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 13px;
+                color: $cRegentGray;
+                user-select: none;
+              }
+            }
+
+          }
+
+          > .section-authorization_get-code {
+            display: flex;
+            align-items: center;
+
+            > div {
+              width: #{calc(50% - 1px)};
+            }
+
+            > .section-authorization_get-code-info {
+              font-family: $font-roboto;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 13px;
+              color: $cTundora;
+            }
+
+            > .section-authorization_get-code-button {
+              height: 40px;
+              border-radius: 4px;
+              background: $cCerulean;
+              color: $cWhite;
+              font-family: $font-open-sans;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 18px;
+              text-transform: uppercase;
+              transition: 280ms;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              cursor: pointer;
+
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+          }
+
+          > .section-authorization_reg-button {
+            height: 40px;
+            border-radius: 4px;
+            background: $cCerulean;
+            color: $cWhite;
+            font-family: $font-open-sans;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: 280ms;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+
+          > .section-authorization_sms {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            > .section-authorization_sms-title {
+              font-family: $font-open-sans;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 18px;
+              color: $cTundora;
+            }
+            > .section-authorization_sms-form {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+
+              > .section-authorization_sms-form-input {
+                width: 50%;
+                height: 50px;
+                > input {
+                  height: 100%;
+                  width: 100%;
+                  padding: 10px;
+                  border: 1px solid #DBE2E9;
+                  border-radius: 4px;
+                  background: $cWhite;
+
+                  &::placeholder {
+                    font-family: $font-roboto;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 17px;
+                    color: $cRegentGray;
+                  }
+                }
+              }
+              > .section-authorization_sms-form-button {
+                height: 40px;
+                width: 50%;
+                border-radius: 4px;
+                background: $cCerulean;
+                color: $cWhite;
+                font-family: $font-open-sans;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                text-transform: uppercase;
+                transition: 280ms;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                &:hover {
+                  transform: scale(1.1);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

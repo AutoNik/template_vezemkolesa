@@ -192,6 +192,61 @@
     }
 
     &__cart {
+        &-action-icons {
+            margin-top: 30px;
+            display: flex;
+
+            @media(max-width: $md2 + px) {
+                flex-wrap: wrap;
+                margin-top: 20px;
+            }
+
+            > .icon {
+                display: none;
+                max-width: 50%;
+                flex-grow: 1;
+                align-items: center;
+                transition: 280ms;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                @media(max-width: $md2 + px) {
+                    width: 50%;
+                    margin-top: 10px;
+                }
+
+                > .icon-image {
+                    height: 100%;
+                    max-height: 50px;
+
+                    > img {
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                > .icon-text {
+                    font-family: $font-open-sans;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: clamp(10px, 1.1vw, 16px);
+                    color: $cTundora;
+                    display: flex;
+                    justify-content: center;
+                    margin: 0 10px 0 10px;
+
+                    @media(max-width: $md2 + px) {
+                        font-size: clamp(10px, 2vw, 16px);
+                    }
+                }
+            }
+
+            > .active {
+                display: flex;
+            }
+        }
     }
 
     &__info {
@@ -415,6 +470,22 @@
         @media screen and (max-width: $md4 - 1 + px) {
             margin-top: 5px;
             font-size: 30px;
+        }
+    }
+
+    &__title-model {
+        > a {
+            font-weight: bold;
+            font-size: 24px;
+            font-family: $font-open-sans;
+            line-height: 100%;
+            color: $cCerulean;
+            border-bottom: 1px dashed $cCerulean;
+
+            &:hover {
+                color: $cCerulean;
+                border-bottom: 1px solid $cCerulean;
+            }
         }
     }
 }
