@@ -22,7 +22,11 @@
 
 @import "common_components";
 @import "product_card";
+@import "product_card_item";
 @import "tirefit";
+@import "product_card_alternative";
+
+@import "tire_card";
 
 @import "cart";
 
@@ -37,5 +41,12 @@
 
 @import "picture-icon";
 
+@import "about";
+@import "tire_service";
+@import "page_templates";
+@import "tire_calculator";
+@import "tire_by_auto";
+@import "section-authorization";
+@import "user_private_office";
 
 @import "global_overwrite";

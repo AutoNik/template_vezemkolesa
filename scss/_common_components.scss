@@ -300,6 +300,9 @@
     &__item {
         width: 16%;
         height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         svg {
             width: 100%;
@@ -308,6 +311,12 @@
 
         path {
             fill: transparent;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
         }
 
         &:not(:first-child) {
