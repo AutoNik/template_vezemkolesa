@@ -74,6 +74,38 @@
           }
         }
       }
+
+      > .main-link {
+        display: flex;
+        justify-content: center;
+
+        > .main-link-btn {
+          width: 100%;
+          max-width: 200px;
+          height: 40px;
+          background-color: $cCerulean;
+          border-radius: 4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: $font-open-sans;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 100%;
+          text-transform: uppercase;
+          color: $cWhite;
+          transition: 280ms;
+
+          @media(max-width: $md4 - 1 + px) {
+            max-width: #{calc(100% - 60px)};
+          }
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
     }
   }
 }
